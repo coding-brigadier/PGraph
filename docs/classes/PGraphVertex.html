@@ -1,0 +1,286 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \PGraphVertex</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/PGraph.html"><i class="icon-folder-open"></i> PGraph</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: The constructor used to create the PGraphVertex object."><span class="description">The constructor used to create the PGraphVertex object.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_addNeighbor" title="addNeighbor :: Add an edge going into the given vertex."><span class="description">Add an edge going into the given vertex.</span><pre>addNeighbor()</pre></a></li>
+<li class="method public "><a href="#method_getData" title="getData :: Return the data that is contained
+in this vertex."><span class="description">Return the data that is contained
+in this vertex.</span><pre>getData()</pre></a></li>
+<li class="method public "><a href="#method_getNeighbors" title="getNeighbors :: Get the list of neighboring vertices."><span class="description">Get the list of neighboring vertices.</span><pre>getNeighbors()</pre></a></li>
+<li class="method public "><a href="#method_getWeight" title="getWeight :: Get the weight of the neighbor."><span class="description">Get the weight of the neighbor.</span><pre>getWeight()</pre></a></li>
+<li class="method public "><a href="#method_getWeights" title="getWeights :: Get the edge weights array."><span class="description">Get the edge weights array.</span><pre>getWeights()</pre></a></li>
+<li class="method public "><a href="#method_removeNeighbor" title="removeNeighbor :: Remove the edge connecting this vertex
+and the other vertex."><span class="description">Remove the edge connecting this vertex
+and the other vertex.</span><pre>removeNeighbor()</pre></a></li>
+<li class="method public "><a href="#method_setWeight" title="setWeight :: Set the weight of an edge
+connecting to the other vertex."><span class="description">Set the weight of an edge
+connecting to the other vertex.</span><pre>setWeight()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property__data" title="$_data :: "><span class="description">The data contained in the vertex.</span><pre>$_data</pre></a></li>
+<li class="property private "><a href="#property__neighbors" title="$_neighbors :: "><span class="description">The neighboring vertices of the current vertex.</span><pre>$_neighbors</pre></a></li>
+<li class="property private "><a href="#property__weights" title="$_weights :: "><span class="description">Edge weights of the edges going to the associated neighbor.</span><pre>$_weights</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\PGraphVertex"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/PGraphVertex.html">PGraphVertex</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">The main PGraph class that is intended for
+user usage.</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>PGraphVertex</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/PGraph.html">PGraph</a></td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="mailto:zaikaus1@gmail.com">Vilius Zaikauskas</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>2013 Vilius Zaikauskas</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://www.php.net/license/3_01.txt">PHP License 3.01</a></td>
+</tr>
+<tr>
+<th>version</th>
+<td>Release: @package_version@</td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://pear.php.net/package/PGraph">http://pear.php.net/package/PGraph</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>Class available since Release 1.0</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>The constructor used to create the PGraphVertex object.</h2>
+<pre>__construct(mixed $data) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>mixed</code><ul>
+<li>the data that is to be held by this vertex.</li>
+</ul>
+</div>
+</div></div>
+</div>
+<a id="method_addNeighbor"></a><div class="element clickable method public method_addNeighbor" data-toggle="collapse" data-target=".method_addNeighbor .collapse">
+<h2>Add an edge going into the given vertex.</h2>
+<pre>addNeighbor(mixed $index, \PGraphVertex $vertex, float $weight) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$index</h4>
+<code>mixed</code><p>the index of the vertex.</p></div>
+<div class="subelement argument">
+<h4>$vertex</h4>
+<code><a href="../classes/PGraphVertex.html">\PGraphVertex</a></code><p>the reference to the vertex.</p></div>
+<div class="subelement argument">
+<h4>$weight</h4>
+<code>float</code><p>the weight of the edge.</p></div>
+</div></div>
+</div>
+<a id="method_getData"></a><div class="element clickable method public method_getData" data-toggle="collapse" data-target=".method_getData .collapse">
+<h2>Return the data that is contained
+in this vertex.</h2>
+<pre>getData() : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>the data contained in this
+              vertex.</div>
+</div></div>
+</div>
+<a id="method_getNeighbors"></a><div class="element clickable method public method_getNeighbors" data-toggle="collapse" data-target=".method_getNeighbors .collapse">
+<h2>Get the list of neighboring vertices.</h2>
+<pre>getNeighbors() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>The list of neighboring
+              vertices.</div>
+</div></div>
+</div>
+<a id="method_getWeight"></a><div class="element clickable method public method_getWeight" data-toggle="collapse" data-target=".method_getWeight .collapse">
+<h2>Get the weight of the neighbor.</h2>
+<pre>getWeight(mixed $index) : float</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$index</h4>
+<code>mixed</code><p>index of the neighbor vertex.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>float</code>the weight of the specified
+              vertex index. FALSE if the vertex
+              doesn't exist.</div>
+</div></div>
+</div>
+<a id="method_getWeights"></a><div class="element clickable method public method_getWeights" data-toggle="collapse" data-target=".method_getWeights .collapse">
+<h2>Get the edge weights array.</h2>
+<pre>getWeights() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- An array of edge weights.</div>
+</div></div>
+</div>
+<a id="method_removeNeighbor"></a><div class="element clickable method public method_removeNeighbor" data-toggle="collapse" data-target=".method_removeNeighbor .collapse">
+<h2>Remove the edge connecting this vertex
+and the other vertex.</h2>
+<pre>removeNeighbor(mixed $index) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$index</h4>
+<code>mixed</code><p>the index of the vertex
+                    to remove.</p></div>
+</div></div>
+</div>
+<a id="method_setWeight"></a><div class="element clickable method public method_setWeight" data-toggle="collapse" data-target=".method_setWeight .collapse">
+<h2>Set the weight of an edge
+connecting to the other vertex.</h2>
+<pre>setWeight(mixed $index, float $newWeight) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$index</h4>
+<code>mixed</code><p>The vertex index to which
+                        this edge connects.</p></div>
+<div class="subelement argument">
+<h4>$newWeight</h4>
+<code>float</code><p>The new edge weight.</p></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__data"> </a><div class="element clickable property private property__data" data-toggle="collapse" data-target=".property__data .collapse">
+<h2>The data contained in the vertex.</h2>
+<pre>$_data : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__neighbors"> </a><div class="element clickable property private property__neighbors" data-toggle="collapse" data-target=".property__neighbors .collapse">
+<h2>The neighboring vertices of the current vertex.</h2>
+<pre>$_neighbors : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__weights"> </a><div class="element clickable property private property__weights" data-toggle="collapse" data-target=".property__weights .collapse">
+<h2>Edge weights of the edges going to the associated neighbor.</h2>
+<pre>$_weights : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-01-29T23:46:04-06:00.<br></footer></div>
+</div>
+</body>
+</html>

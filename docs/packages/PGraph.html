@@ -1,0 +1,287 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » PGraph</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/PGraph.html"><i class="icon-folder-open"></i> PGraph</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/PGraph.html" title="PGraph"><i class="icon-folder-open"></i>PGraph</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#NoVertexException" title="Exception thrown if a vertex doesn't exist.">NoVertexException</a></li>
+<li><a href="#NoEdgeException" title="Exception thrown if an edge between
+certain vertices doesn't exist.">NoEdgeException</a></li>
+<li><a href="#EdgeExistsException" title="Exception thrown if an edge between two vertices
+exists.">EdgeExistsException</a></li>
+<li><a href="#VertexExistsException" title="Exception thrown if a vertex exists.">VertexExistsException</a></li>
+<li><a href="#NoPathException" title="Exception thrown if there is no path
+betwee two vertices.">NoPathException</a></li>
+<li><a href="#IncorrectTypeException" title="Exception thrown if the parameter passed has an invalid
+type.">IncorrectTypeException</a></li>
+<li><a href="#NegativeCycleException" title="Exception thrown if a graph contains a negative cycle.">NegativeCycleException</a></li>
+<li><a href="#PGraphException" title="The main Exception class that is intended for
+being the benchmark for all Exceptions.">PGraphException</a></li>
+<li><a href="#PGraphDoublyLinkedList" title="The child class of SplDoubleLinkedList to create
+a priority queue by using this data structure.">PGraphDoublyLinkedList</a></li>
+<li><a href="#PGraph" title="The main PGraph class that is intended for
+user usage.">PGraph</a></li>
+<li><a href="#PGraphVertex" title="The main PGraph class that is intended for
+user usage.">PGraphVertex</a></li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants</li>
+<li class="constant  "><a href="#constant_ARG_INDEX" title="ARG_INDEX :: "><span class="description">ARG_INDEX</span><pre>ARG_INDEX</pre></a></li>
+<li class="constant  "><a href="#constant_ARG_INDEX1" title="ARG_INDEX1 :: "><span class="description">ARG_INDEX1</span><pre>ARG_INDEX1</pre></a></li>
+<li class="constant  "><a href="#constant_ARG_INDEX2" title="ARG_INDEX2 :: "><span class="description">ARG_INDEX2</span><pre>ARG_INDEX2</pre></a></li>
+<li class="constant  "><a href="#constant_BAD_TYPE" title="BAD_TYPE :: "><span class="description">BAD_TYPE</span><pre>BAD_TYPE</pre></a></li>
+<li class="constant  "><a href="#constant_DELIMITER" title="DELIMITER :: "><span class="description">DELIMITER</span><pre>DELIMITER</pre></a></li>
+<li class="constant  "><a href="#constant_EDGE_EXISTS" title="EDGE_EXISTS :: "><span class="description">EDGE_EXISTS</span><pre>EDGE_EXISTS</pre></a></li>
+<li class="constant  "><a href="#constant_NEG_CYCLE" title="NEG_CYCLE :: "><span class="description">NEG_CYCLE</span><pre>NEG_CYCLE</pre></a></li>
+<li class="constant  "><a href="#constant_NO_EDGE" title="NO_EDGE :: "><span class="description">NO_EDGE</span><pre>NO_EDGE</pre></a></li>
+<li class="constant  "><a href="#constant_NO_PATH" title="NO_PATH :: "><span class="description">NO_PATH</span><pre>NO_PATH</pre></a></li>
+<li class="constant  "><a href="#constant_NO_VERTEX" title="NO_VERTEX :: "><span class="description">NO_VERTEX</span><pre>NO_VERTEX</pre></a></li>
+<li class="constant  "><a href="#constant_QUEUE" title="QUEUE :: "><span class="description">QUEUE</span><pre>QUEUE</pre></a></li>
+<li class="constant  "><a href="#constant_STACK" title="STACK :: "><span class="description">STACK</span><pre>STACK</pre></a></li>
+<li class="constant  "><a href="#constant_UNKNOWN_ERROR" title="UNKNOWN_ERROR :: "><span class="description">UNKNOWN_ERROR</span><pre>UNKNOWN_ERROR</pre></a></li>
+<li class="constant  "><a href="#constant_VERTEX_EXISTS" title="VERTEX_EXISTS :: "><span class="description">VERTEX_EXISTS</span><pre>VERTEX_EXISTS</pre></a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/PGraph.html">PGraph</a></li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="EdgeExistsException" class="element ajax clickable class">
+<h1>EdgeExistsException<a href="../classes/EdgeExistsException.html">¶</a>
+</h1>
+<p class="short_description">Exception thrown if an edge between two vertices
+exists.</p>
+<div class="details collapse"></div>
+<a href="../classes/EdgeExistsException.html" class="more">« More »</a>
+</div>
+<div id="IncorrectTypeException" class="element ajax clickable class">
+<h1>IncorrectTypeException<a href="../classes/IncorrectTypeException.html">¶</a>
+</h1>
+<p class="short_description">Exception thrown if the parameter passed has an invalid
+type.</p>
+<div class="details collapse"></div>
+<a href="../classes/IncorrectTypeException.html" class="more">« More »</a>
+</div>
+<div id="NegativeCycleException" class="element ajax clickable class">
+<h1>NegativeCycleException<a href="../classes/NegativeCycleException.html">¶</a>
+</h1>
+<p class="short_description">Exception thrown if a graph contains a negative cycle.</p>
+<div class="details collapse"></div>
+<a href="../classes/NegativeCycleException.html" class="more">« More »</a>
+</div>
+<div id="NoEdgeException" class="element ajax clickable class">
+<h1>NoEdgeException<a href="../classes/NoEdgeException.html">¶</a>
+</h1>
+<p class="short_description">Exception thrown if an edge between
+certain vertices doesn't exist.</p>
+<div class="details collapse"></div>
+<a href="../classes/NoEdgeException.html" class="more">« More »</a>
+</div>
+<div id="NoPathException" class="element ajax clickable class">
+<h1>NoPathException<a href="../classes/NoPathException.html">¶</a>
+</h1>
+<p class="short_description">Exception thrown if there is no path
+betwee two vertices.</p>
+<div class="details collapse"></div>
+<a href="../classes/NoPathException.html" class="more">« More »</a>
+</div>
+<div id="NoVertexException" class="element ajax clickable class">
+<h1>NoVertexException<a href="../classes/NoVertexException.html">¶</a>
+</h1>
+<p class="short_description">Exception thrown if a vertex doesn't exist.</p>
+<div class="details collapse"></div>
+<a href="../classes/NoVertexException.html" class="more">« More »</a>
+</div>
+<div id="PGraph" class="element ajax clickable class">
+<h1>PGraph<a href="../classes/PGraph.html">¶</a>
+</h1>
+<p class="short_description">The main PGraph class that is intended for
+user usage.</p>
+<div class="details collapse"></div>
+<a href="../classes/PGraph.html" class="more">« More »</a>
+</div>
+<div id="PGraphDoublyLinkedList" class="element ajax clickable class">
+<h1>PGraphDoublyLinkedList<a href="../classes/PGraphDoublyLinkedList.html">¶</a>
+</h1>
+<p class="short_description">The child class of SplDoubleLinkedList to create
+a priority queue by using this data structure.</p>
+<div class="details collapse"></div>
+<a href="../classes/PGraphDoublyLinkedList.html" class="more">« More »</a>
+</div>
+<div id="PGraphException" class="element ajax clickable class">
+<h1>PGraphException<a href="../classes/PGraphException.html">¶</a>
+</h1>
+<p class="short_description">The main Exception class that is intended for
+being the benchmark for all Exceptions.</p>
+<div class="details collapse"></div>
+<a href="../classes/PGraphException.html" class="more">« More »</a>
+</div>
+<div id="PGraphVertex" class="element ajax clickable class">
+<h1>PGraphVertex<a href="../classes/PGraphVertex.html">¶</a>
+</h1>
+<p class="short_description">The main PGraph class that is intended for
+user usage.</p>
+<div class="details collapse"></div>
+<a href="../classes/PGraphVertex.html" class="more">« More »</a>
+</div>
+<div id="VertexExistsException" class="element ajax clickable class">
+<h1>VertexExistsException<a href="../classes/VertexExistsException.html">¶</a>
+</h1>
+<p class="short_description">Exception thrown if a vertex exists.</p>
+<div class="details collapse"></div>
+<a href="../classes/VertexExistsException.html" class="more">« More »</a>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_ARG_INDEX"> </a><div class="element clickable constant  constant_ARG_INDEX" data-toggle="collapse" data-target=".constant_ARG_INDEX .collapse">
+<h2>ARG_INDEX</h2>
+<pre>ARG_INDEX </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ARG_INDEX1"> </a><div class="element clickable constant  constant_ARG_INDEX1" data-toggle="collapse" data-target=".constant_ARG_INDEX1 .collapse">
+<h2>ARG_INDEX1</h2>
+<pre>ARG_INDEX1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ARG_INDEX2"> </a><div class="element clickable constant  constant_ARG_INDEX2" data-toggle="collapse" data-target=".constant_ARG_INDEX2 .collapse">
+<h2>ARG_INDEX2</h2>
+<pre>ARG_INDEX2 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_BAD_TYPE"> </a><div class="element clickable constant  constant_BAD_TYPE" data-toggle="collapse" data-target=".constant_BAD_TYPE .collapse">
+<h2>BAD_TYPE</h2>
+<pre>BAD_TYPE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_DELIMITER"> </a><div class="element clickable constant  constant_DELIMITER" data-toggle="collapse" data-target=".constant_DELIMITER .collapse">
+<h2>DELIMITER</h2>
+<pre>DELIMITER </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_EDGE_EXISTS"> </a><div class="element clickable constant  constant_EDGE_EXISTS" data-toggle="collapse" data-target=".constant_EDGE_EXISTS .collapse">
+<h2>EDGE_EXISTS</h2>
+<pre>EDGE_EXISTS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_NEG_CYCLE"> </a><div class="element clickable constant  constant_NEG_CYCLE" data-toggle="collapse" data-target=".constant_NEG_CYCLE .collapse">
+<h2>NEG_CYCLE</h2>
+<pre>NEG_CYCLE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_NO_EDGE"> </a><div class="element clickable constant  constant_NO_EDGE" data-toggle="collapse" data-target=".constant_NO_EDGE .collapse">
+<h2>NO_EDGE</h2>
+<pre>NO_EDGE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_NO_PATH"> </a><div class="element clickable constant  constant_NO_PATH" data-toggle="collapse" data-target=".constant_NO_PATH .collapse">
+<h2>NO_PATH</h2>
+<pre>NO_PATH </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_NO_VERTEX"> </a><div class="element clickable constant  constant_NO_VERTEX" data-toggle="collapse" data-target=".constant_NO_VERTEX .collapse">
+<h2>NO_VERTEX</h2>
+<pre>NO_VERTEX </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_QUEUE"> </a><div class="element clickable constant  constant_QUEUE" data-toggle="collapse" data-target=".constant_QUEUE .collapse">
+<h2>QUEUE</h2>
+<pre>QUEUE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_STACK"> </a><div class="element clickable constant  constant_STACK" data-toggle="collapse" data-target=".constant_STACK .collapse">
+<h2>STACK</h2>
+<pre>STACK </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_UNKNOWN_ERROR"> </a><div class="element clickable constant  constant_UNKNOWN_ERROR" data-toggle="collapse" data-target=".constant_UNKNOWN_ERROR .collapse">
+<h2>UNKNOWN_ERROR</h2>
+<pre>UNKNOWN_ERROR </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_VERTEX_EXISTS"> </a><div class="element clickable constant  constant_VERTEX_EXISTS" data-toggle="collapse" data-target=".constant_VERTEX_EXISTS .collapse">
+<h2>VERTEX_EXISTS</h2>
+<pre>VERTEX_EXISTS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-01-29T23:46:04-06:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project version="2.0.0a12" title="">
+  <file path="Exceptions/Exceptions.php" hash="b1fcd004a154acae73fc2ec67ee0ef3e" package="PGraph">
+    <docblock line="3">
+      <description>A collection of Exception classes.</description>
+      <long-description>&lt;p&gt;PHP version 5.3&lt;/p&gt;
+
+&lt;p&gt;LICENSE: This source file is subject to version 3.01 of the PHP license
+that is available through the world-wide-web at the following URI:
+http://www.php.net/license/3_01.txt.  If you did not receive a copy of
+the PHP License and are unable to obtain it through the web, please
+send a note to license@php.net so we can mail you a copy immediately.&lt;/p&gt;</long-description>
+      <tag line="3" name="category" description="Exceptions"/>
+      <tag line="3" name="package" description="PGraph"/>
+      <tag line="3" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
+      <tag line="3" name="copyright" description="2013 Vilius Zaikauskas"/>
+      <tag line="3" name="license" description="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+      <tag line="3" name="version" description="GIT: $Id$"/>
+      <tag line="3" name="link" description="http://pear.php.net/package/PGraph" link="http://pear.php.net/package/PGraph"/>
+      <tag line="3" name="since" description="File available since Release 1.0"/>
+    </docblock>
+    <include line="23" type="Require Once" package="Default">
+      <name>PGraphException.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="37" package="PGraph">
+      <extends>\PGraphException</extends>
+      <name>NoVertexException</name>
+      <full_name>\NoVertexException</full_name>
+      <docblock line="25">
+        <description>Exception thrown if a vertex doesn't exist.</description>
+        <long-description></long-description>
+        <tag line="25" name="category" description="NoVertexException"/>
+        <tag line="25" name="package" description="PGraph"/>
+        <tag line="25" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
+        <tag line="25" name="copyright" description="2013 Vilius Zaikauskas"/>
+        <tag line="25" name="license" description="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+        <tag line="25" name="version" description="Release: @package_version@"/>
+        <tag line="25" name="link" description="http://pear.php.net/package/PGraph" link="http://pear.php.net/package/PGraph"/>
+        <tag line="25" name="since" description="Class available since Release 1.0"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="46" package="PGraph">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="40">
+          <description>Constructor to create the NoVertexException.</description>
+          <long-description></long-description>
+          <tag line="40" name="param" description="The arguments to be embedded into&#10;                   the Exception message." type="mixed" variable="$args">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="46">
+          <name>$args</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <class final="false" abstract="false" namespace="global" line="66" package="PGraph">
+      <extends>\PGraphException</extends>
+      <name>NoEdgeException</name>
+      <full_name>\NoEdgeException</full_name>
+      <docblock line="53">
+        <description>Exception thrown if an edge between
+certain vertices doesn't exist.</description>
+        <long-description></long-description>
+        <tag line="53" name="category" description="NoEdgeException"/>
+        <tag line="53" name="package" description="PGraph"/>
+        <tag line="53" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
+        <tag line="53" name="copyright" description="2013 Vilius Zaikauskas"/>
+        <tag line="53" name="license" description="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+        <tag line="53" name="version" description="Release: @package_version@"/>
+        <tag line="53" name="link" description="http://pear.php.net/package/PGraph" link="http://pear.php.net/package/PGraph"/>
+        <tag line="53" name="since" description="Class available since Release 1.0"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="75" package="PGraph">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="69">
+          <description>Constructor to create the NoEdgeException.</description>
+          <long-description></long-description>
+          <tag line="69" name="param" description="The arguments to be embedded into&#10;                   the Exception message." type="mixed" variable="$args">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="75">
+          <name>$args</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <class final="false" abstract="false" namespace="global" line="95" package="PGraph">
+      <extends>\PGraphException</extends>
+      <name>EdgeExistsException</name>
+      <full_name>\EdgeExistsException</full_name>
+      <docblock line="82">
+        <description>Exception thrown if an edge between two vertices
+exists.</description>
+        <long-description></long-description>
+        <tag line="82" name="category" description="EdgeExistsException"/>
+        <tag line="82" name="package" description="PGraph"/>
+        <tag line="82" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
+        <tag line="82" name="copyright" description="2013 Vilius Zaikauskas"/>
+        <tag line="82" name="license" description="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+        <tag line="82" name="version" description="Release: @package_version@"/>
+        <tag line="82" name="link" description="http://pear.php.net/package/PGraph" link="http://pear.php.net/package/PGraph"/>
+        <tag line="82" name="since" description="Class available since Release 1.0"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="104" package="PGraph">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="98">
+          <description>Constructor to create the EdgeExistsException.</description>
+          <long-description></long-description>
+          <tag line="98" name="param" description="The arguments to be embedded into&#10;                   the Exception message." type="mixed" variable="$args">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="104">
+          <name>$args</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <class final="false" abstract="false" namespace="global" line="123" package="PGraph">
+      <extends>\PGraphException</extends>
+      <name>VertexExistsException</name>
+      <full_name>\VertexExistsException</full_name>
+      <docblock line="111">
+        <description>Exception thrown if a vertex exists.</description>
+        <long-description></long-description>
+        <tag line="111" name="category" description="VertexExistsException"/>
+        <tag line="111" name="package" description="PGraph"/>
+        <tag line="111" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
+        <tag line="111" name="copyright" description="2013 Vilius Zaikauskas"/>
+        <tag line="111" name="license" description="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+        <tag line="111" name="version" description="Release: @package_version@"/>
+        <tag line="111" name="link" description="http://pear.php.net/package/PGraph" link="http://pear.php.net/package/PGraph"/>
+        <tag line="111" name="since" description="Class available since Release 1.0"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="131" package="PGraph">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="125">
+          <description>Constructor to create the VertexExistsException.</description>
+          <long-description></long-description>
+          <tag line="125" name="param" description="The arguments to be embedded into&#10;                   the Exception message." type="mixed" variable="$args">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="131">
+          <name>$args</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <class final="false" abstract="false" namespace="global" line="150" package="PGraph">
+      <extends>\PGraphException</extends>
+      <name>NoPathException</name>
+      <full_name>\NoPathException</full_name>
+      <docblock line="137">
+        <description>Exception thrown if there is no path
+betwee two vertices.</description>
+        <long-description></long-description>
+        <tag line="137" name="category" description="NoPathException"/>
+        <tag line="137" name="package" description="PGraph"/>
+        <tag line="137" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
+        <tag line="137" name="copyright" description="2013 Vilius Zaikauskas"/>
+        <tag line="137" name="license" description="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+        <tag line="137" name="version" description="Release: @package_version@"/>
+        <tag line="137" name="link" description="http://pear.php.net/package/PGraph" link="http://pear.php.net/package/PGraph"/>
+        <tag line="137" name="since" description="Class available since Release 1.0"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="159" package="PGraph">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="153">
+          <description>Constructor to create the NoPathException.</description>
+          <long-description></long-description>
+          <tag line="153" name="param" description="The arguments to be embedded into&#10;                   the Exception message." type="mixed" variable="$args">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="159">
+          <name>$args</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <class final="false" abstract="false" namespace="global" line="178" package="PGraph">
+      <extends>\PGraphException</extends>
+      <name>IncorrectTypeException</name>
+      <full_name>\IncorrectTypeException</full_name>
+      <docblock line="165">
+        <description>Exception thrown if the parameter passed has an invalid
+type.</description>
+        <long-description></long-description>
+        <tag line="165" name="category" description="IncorrectTypeException"/>
+        <tag line="165" name="package" description="PGraph"/>
+        <tag line="165" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
+        <tag line="165" name="copyright" description="2013 Vilius Zaikauskas"/>
+        <tag line="165" name="license" description="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+        <tag line="165" name="version" description="Release: @package_version@"/>
+        <tag line="165" name="link" description="http://pear.php.net/package/PGraph" link="http://pear.php.net/package/PGraph"/>
+        <tag line="165" name="since" description="Class available since Release 1.0"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="183" package="PGraph">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="180">
+          <description>Constructor to create the IncorrectTypeException.</description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+    </class>
+    <class final="false" abstract="false" namespace="global" line="202" package="PGraph">
+      <extends>\PGraphException</extends>
+      <name>NegativeCycleException</name>
+      <full_name>\NegativeCycleException</full_name>
+      <docblock line="190">
+        <description>Exception thrown if a graph contains a negative cycle.</description>
+        <long-description></long-description>
+        <tag line="190" name="category" description="NegativeCycleException"/>
+        <tag line="190" name="package" description="PGraph"/>
+        <tag line="190" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
+        <tag line="190" name="copyright" description="2013 Vilius Zaikauskas"/>
+        <tag line="190" name="license" description="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+        <tag line="190" name="version" description="Release: @package_version@"/>
+        <tag line="190" name="link" description="http://pear.php.net/package/PGraph" link="http://pear.php.net/package/PGraph"/>
+        <tag line="190" name="since" description="Class available since Release 1.0"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="207" package="PGraph">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="204">
+          <description>Constructor to create the NegativeCycleException.</description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+    </class>
+  </file>
+  <file path="Exceptions/PGraphException.php" hash="c93860f593470a8ad13ec3128f77407d" package="PGraph">
+    <docblock line="2">
+      <description>The Generic PGraph Exception class.</description>
+      <long-description>&lt;p&gt;All valid Exceptions will extend this class.&lt;/p&gt;
+
+&lt;p&gt;PHP version 5.3&lt;/p&gt;
+
+&lt;p&gt;LICENSE: This source file is subject to version 3.01 of the PHP license
+that is available through the world-wide-web at the following URI:
+http://www.php.net/license/3_01.txt.  If you did not receive a copy of
+the PHP License and are unable to obtain it through the web, please
+send a note to license@php.net so we can mail you a copy immediately.&lt;/p&gt;</long-description>
+      <tag line="2" name="category" description="Exceptions"/>
+      <tag line="2" name="package" description="PGraph"/>
+      <tag line="2" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
+      <tag line="2" name="copyright" description="2013 Vilius Zaikauskas"/>
+      <tag line="2" name="license" description="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+      <tag line="2" name="version" description="GIT: $Id$"/>
+      <tag line="2" name="link" description="http://pear.php.net/package/PGraph" link="http://pear.php.net/package/PGraph"/>
+      <tag line="2" name="since" description="File available since Release 1.0"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="global" line="39" package="PGraph">
+      <extends>\Exception</extends>
+      <name>PGraphException</name>
+      <full_name>\PGraphException</full_name>
+      <docblock line="26">
+        <description>The main Exception class that is intended for
+being the benchmark for all Exceptions.</description>
+        <long-description/>
+        <tag line="26" name="category" description="PGraphException"/>
+        <tag line="26" name="package" description="PGraph"/>
+        <tag line="26" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
+        <tag line="26" name="copyright" description="2013 Vilius Zaikauskas"/>
+        <tag line="26" name="license" description="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+        <tag line="26" name="version" description="Release: @package_version@"/>
+        <tag line="26" name="link" description="http://pear.php.net/package/PGraph" link="http://pear.php.net/package/PGraph"/>
+        <tag line="26" name="since" description="Class available since Release 1.0"/>
+      </docblock>
+      <property final="false" static="true" visibility="private" line="45" namespace="global" package="Default">
+        <name>$_messages</name>
+        <default>null</default>
+        <docblock line="41">
+          <description/>
+          <long-description/>
+          <tag line="41" name="var" description="Exception messages." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="54" package="PGraph">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="47">
+          <description>PGraphException Constructor.</description>
+          <long-description/>
+          <tag line="47" name="param" description="Values to be embedded into&#10;                    the messages." type="array" variable="$args">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="47" name="param" description="The Exception message index." type="int" variable="$index">
+            <type by_reference="false">int</type>
+          </tag>
+        </docblock>
+        <argument line="54">
+          <name>$args</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="54">
+          <name>$index</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="private" namespace="global" line="77" package="PGraph">
+        <name>_initMessages</name>
+        <full_name>_initMessages</full_name>
+        <docblock line="71">
+          <description>Initialize the $_messages array if
+it hasn't been done so.</description>
+          <long-description/>
+          <tag line="71" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+  </file>
+  <file path="PGraphDoublyLinkedList.php" hash="69be7b2deab12fc362f3fa34dad33bce" package="PGraph">
+    <docblock line="4">
+      <description>A small extension of the SplDoublyLinkedList to give
+the ability to use it as an Priority Queue.</description>
+      <long-description>&lt;p&gt;PHP version 5.3&lt;/p&gt;
+
+&lt;p&gt;LICENSE: This source file is subject to version 3.01 of the PHP license
+that is available through the world-wide-web at the following URI:
+http://www.php.net/license/3_01.txt.  If you did not receive a copy of
+the PHP License and are unable to obtain it through the web, please
+send a note to license@php.net so we can mail you a copy immediately.&lt;/p&gt;</long-description>
+      <tag line="4" name="category" description="Linked_List"/>
+      <tag line="4" name="package" description="PGraph"/>
+      <tag line="4" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
+      <tag line="4" name="copyright" description="2013 Vilius Zaikauskas"/>
+      <tag line="4" name="license" description="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+      <tag line="4" name="version" description="GIT: $Id$"/>
+      <tag line="4" name="link" description="http://pear.php.net/package/PGraph" link="http://pear.php.net/package/PGraph"/>
+      <tag line="4" name="since" description="File available since Release 1.0"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="global" line="40" package="PGraph">
+      <extends>\SplDoublyLinkedList</extends>
+      <name>PGraphDoublyLinkedList</name>
+      <full_name>\PGraphDoublyLinkedList</full_name>
+      <docblock line="27">
+        <description>The child class of SplDoubleLinkedList to create
+a priority queue by using this data structure.</description>
+        <long-description/>
+        <tag line="27" name="category" description="PGraphDoublyLinkedList"/>
+        <tag line="27" name="package" description="PGraph"/>
+        <tag line="27" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
+        <tag line="27" name="copyright" description="2013 Vilius Zaikauskas"/>
+        <tag line="27" name="license" description="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+        <tag line="27" name="version" description="Release: @package_version@"/>
+        <tag line="27" name="link" description="http://pear.php.net/package/PGraph" link="http://pear.php.net/package/PGraph"/>
+        <tag line="27" name="since" description="Class available since Release 1.0"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="46" package="PGraph">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="42">
+          <description>The constructor used to create the
+doubly linked list.</description>
+          <long-description/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="59" package="PGraph">
+        <name>popSmallest</name>
+        <full_name>popSmallest</full_name>
+        <docblock line="51">
+          <description>Remove the node with the smallest value
+from the linked list.</description>
+          <long-description/>
+          <tag line="51" name="return" description="The key/value pair of the popped&#10;              node. NULL if the linked list&#10;              is empty." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+  </file>
+  <file path="PGraph.php" hash="f56e0b8e0ddf27348464432ad303b0fb" package="PGraph">
+    <docblock line="3">
+      <description>The main PGraph file.</description>
+      <long-description>&lt;p&gt;This is where all the functions used
+by the users are.&lt;/p&gt;
+
+&lt;p&gt;PHP version 5.3&lt;/p&gt;
+
+&lt;p&gt;LICENSE: This source file is subject to version 3.01 of the PHP license
+that is available through the world-wide-web at the following URI:
+http://www.php.net/license/3_01.txt.  If you did not receive a copy of
+the PHP License and are unable to obtain it through the web, please
+send a note to license@php.net so we can mail you a copy immediately.&lt;/p&gt;</long-description>
+      <tag line="3" name="category" description="Main"/>
+      <tag line="3" name="package" description="PGraph"/>
+      <tag line="3" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
+      <tag line="3" name="copyright" description="2013 Vilius Zaikauskas"/>
+      <tag line="3" name="license" description="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+      <tag line="3" name="version" description="GIT: $Id$"/>
+      <tag line="3" name="link" description="http://pear.php.net/package/PGraph" link="http://pear.php.net/package/PGraph"/>
+      <tag line="3" name="since" description="File available since Release 1.0"/>
+    </docblock>
+    <include line="26" type="Require Once" package="Default">
+      <name>PEAR.php</name>
+    </include>
+    <include line="29" type="Require Once" package="Default">
+      <name>Constants.php</name>
+    </include>
+    <include line="30" type="Require Once" package="Default">
+      <name>PGraph/Exceptions.php</name>
+    </include>
+    <include line="31" type="Require Once" package="Default">
+      <name>PGraphVertex.php</name>
+    </include>
+    <include line="32" type="Require Once" package="Default">
+      <name>ErrorGenerator.php</name>
+    </include>
+    <include line="33" type="Require Once" package="Default">
+      <name>PGraphDoublyLinkedList.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="48" package="PGraph">
+      <extends/>
+      <implements>\Iterator</implements>
+      <implements>\ArrayAccess</implements>
+      <implements>\Countable</implements>
+      <name>PGraph</name>
+      <full_name>\PGraph</full_name>
+      <docblock line="35">
+        <description>The main PGraph class that is intended for
+user usage.</description>
+        <long-description/>
+        <tag line="35" name="category" description="PGraph"/>
+        <tag line="35" name="package" description="PGraph"/>
+        <tag line="35" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
+        <tag line="35" name="copyright" description="2013 Vilius Zaikauskas"/>
+        <tag line="35" name="license" description="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+        <tag line="35" name="version" description="Release: @package_version@"/>
+        <tag line="35" name="link" description="http://pear.php.net/package/PGraph" link="http://pear.php.net/package/PGraph"/>
+        <tag line="35" name="since" description="Class available since Release 1.0"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="55" namespace="global" package="Default">
+        <name>$_vertices</name>
+        <default/>
+        <docblock line="51">
+          <description/>
+          <long-description/>
+          <tag line="51" name="var" description="A vertex list." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="62" namespace="global" package="Default">
+        <name>$_directed</name>
+        <default/>
+        <docblock line="57">
+          <description/>
+          <long-description/>
+          <tag line="57" name="var" description="This graph is either directed or undirected." type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="68" namespace="global" package="Default">
+        <name>$_negativeWeights</name>
+        <default/>
+        <docblock line="64">
+          <description/>
+          <long-description/>
+          <tag line="64" name="var" description="The number of negative weight edges." type="int">
+            <type by_reference="false">int</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="74" namespace="global" package="Default">
+        <name>$_error</name>
+        <default/>
+        <docblock line="70">
+          <description/>
+          <long-description/>
+          <tag line="70" name="var" description="The last error message." type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="80" namespace="global" package="Default">
+        <name>$_errno</name>
+        <default/>
+        <docblock line="76">
+          <description/>
+          <long-description/>
+          <tag line="76" name="var" description="The last error number." type="int">
+            <type by_reference="false">int</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="89" package="PGraph">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="82">
+          <description>A constructor to create the PGraph.</description>
+          <long-description/>
+          <tag line="82" name="param" description="TRUE if we want to the graph to be directed.&#10;                         FALSE if we want it to be undirected.&#10;                         (Default: TRUE)" type="boolean" variable="$directed">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+        <argument line="89">
+          <name>$directed</name>
+          <default>true</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="101" package="PGraph">
+        <name>count</name>
+        <full_name>count</full_name>
+        <docblock line="96">
+          <description>Gives the number of vertices.</description>
+          <long-description/>
+          <tag line="96" name="return" description="The number of vertices." type="int">
+            <type by_reference="false">int</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="112" package="PGraph">
+        <name>current</name>
+        <full_name>current</full_name>
+        <docblock line="106">
+          <description>Gets the value of the currently pointed vertex.</description>
+          <long-description/>
+          <tag line="106" name="return" description="The value that is in the&#10;              currently pointed vertex." type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="124" package="PGraph">
+        <name>key</name>
+        <full_name>key</full_name>
+        <docblock line="118">
+          <description>The index of the current vertex element.</description>
+          <long-description/>
+          <tag line="118" name="return" description="The index of the currently pointed&#10;              vertex." type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="134" package="PGraph">
+        <name>next</name>
+        <full_name>next</full_name>
+        <docblock line="129">
+          <description>Move the pointer to the next vertex.</description>
+          <long-description/>
+          <tag line="129" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="145" package="PGraph">
+        <name>rewind</name>
+        <full_name>rewind</full_name>
+        <docblock line="139">
+          <description>Move the pointer to an array of vertices
+to the beginning.</description>
+          <long-description/>
+          <tag line="139" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="158" package="PGraph">
+        <name>valid</name>
+        <full_name>valid</full_name>
+        <docblock line="150">
+          <description>Check if the array pointer is pointing to a valid
+array slot.</description>
+          <long-description/>
+          <tag line="150" name="return" description="TRUE if the current pointer is&#10;                pointing the valid slot.&#10;                FALSE, otherwise." type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="171" package="PGraph">
+        <name>offsetExists</name>
+        <full_name>offsetExists</full_name>
+        <docblock line="163">
+          <description>Check if the vertex with a given index exists.</description>
+          <long-description/>
+          <tag line="163" name="param" description="The index of the vertex." type="mixed" variable="$offset">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="163" name="return" description="TRUE if the vertex with a given index&#10;                exists. FALSE, otherwise." type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+        <argument line="171">
+          <name>$offset</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="184" package="PGraph">
+        <name>offsetGet</name>
+        <full_name>offsetGet</full_name>
+        <docblock line="176">
+          <description>Get the value of the vertex.</description>
+          <long-description/>
+          <tag line="176" name="param" description="The index we are accessing." type="mixed" variable="$offset">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="176" name="return" description="The data value. NULL, if the there is no value&#10;                basedon the given index." type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="184">
+          <name>$offset</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="209" package="PGraph">
+        <name>offsetSet</name>
+        <full_name>offsetSet</full_name>
+        <docblock line="201">
+          <description>Add the vertex to the vertext array.</description>
+          <long-description/>
+          <tag line="201" name="param" description="The index of the vertex." type="mixed" variable="$offset">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="201" name="param" description="The data contained in the vertex." type="mixed" variable="$value">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="201" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="209">
+          <name>$offset</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="209">
+          <name>$value</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="221" package="PGraph">
+        <name>offsetUnset</name>
+        <full_name>offsetUnset</full_name>
+        <docblock line="214">
+          <description>Unset the array element.</description>
+          <long-description/>
+          <tag line="214" name="param" description="the index of an element to unset." type="mixed" variable="$offset">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="214" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="221">
+          <name>$offset</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="258" package="PGraph">
+        <name>addEdge</name>
+        <full_name>addEdge</full_name>
+        <docblock line="243">
+          <description>Add an edge between two vertices (if it doesn't exist).</description>
+          <long-description/>
+          <tag line="243" name="param" description="The index of the first vertex.&#10;                       If the graph is undirected, the edge&#10;                       GOES FROM this vertex." type="mixed" variable="$srcIndex">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="243" name="param" description="The index of the second vertex.&#10;                       If the graph is directed, the edge&#10;                       GOES INTO this vertex." type="mixed" variable="$dstIndex">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="243" name="param" description="The weight of the edge (Default: 0)." type="float" variable="$weight">
+            <type by_reference="false">float</type>
+          </tag>
+          <tag line="243" name="throws" description="" type="\Exception">
+            <type by_reference="false">\Exception</type>
+          </tag>
+          <tag line="243" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="258">
+          <name>$srcIndex</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="258">
+          <name>$dstIndex</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="258">
+          <name>$weight</name>
+          <default>0</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="311" package="PGraph">
+        <name>setWeight</name>
+        <full_name>setWeight</full_name>
+        <docblock line="298">
+          <description>Provided the given vertices and the edge between them
+exists, change the weight of the edge.</description>
+          <long-description/>
+          <tag line="298" name="param" description="The index of a vertex from which the edge&#10;                        GOES FROM." type="mixed" variable="$srcIndex">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="298" name="param" description="The index of a vertex to which the edge&#10;                        GOES TO." type="mixed" variable="$dstIndex">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="298" name="param" description="The new weight of the edge." type="float" variable="$newWeight">
+            <type by_reference="false">float</type>
+          </tag>
+          <tag line="298" name="return" description="TRUE if the weight was successfully changed.&#10;                FALSE otherwise." type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+        <argument line="311">
+          <name>$srcIndex</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="311">
+          <name>$dstIndex</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="311">
+          <name>$newWeight</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="374" package="PGraph">
+        <name>setValue</name>
+        <full_name>setValue</full_name>
+        <docblock line="365">
+          <description>Change the value of the already existing vertex.</description>
+          <long-description/>
+          <tag line="365" name="param" description="The index of the vertex." type="mixed" variable="$index">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="365" name="param" description="The new value that the vertex should contain." type="mixed" variable="$newValue">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="365" name="return" description="TRUE if the value has been changed successfuly.&#10;                FALSE otherwise." type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+        <argument line="374">
+          <name>$index</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="374">
+          <name>$newValue</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="397" package="PGraph">
+        <name>removeEdge</name>
+        <full_name>removeEdge</full_name>
+        <docblock line="388">
+          <description>Remove the edge (if exists).</description>
+          <long-description/>
+          <tag line="388" name="param" description="The index from which the edge GOES FROM." type="mixed" variable="$srcIndex">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="388" name="param" description="The index to which the edge GOES TO." type="mixed" variable="$dstIndex">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="388" name="return" description="TRUE if the edge was successfully removed.&#10;                FALSE otherwise." type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+        <argument line="397">
+          <name>$srcIndex</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="397">
+          <name>$dstIndex</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="465" package="PGraph">
+        <name>addVertex</name>
+        <full_name>addVertex</full_name>
+        <docblock line="457">
+          <description>Add a new vertex into the graph.</description>
+          <long-description/>
+          <tag line="457" name="param" description="The index of the next vertex" type="mixed" variable="$index">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="457" name="param" description="The value that the vertex will contain." type="mixed" variable="$value">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="457" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="465">
+          <name>$index</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="465">
+          <name>$value</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="477" package="PGraph">
+        <name>removeVertex</name>
+        <full_name>removeVertex</full_name>
+        <docblock line="470">
+          <description>Remove the vertex if it exists.</description>
+          <long-description/>
+          <tag line="470" name="param" description="The index of the vertex we want to remove." type="mixed" variable="$index">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="470" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="477">
+          <name>$index</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="489" package="PGraph">
+        <name>getVertex</name>
+        <full_name>getVertex</full_name>
+        <docblock line="482">
+          <description>Get the value of the vertex.</description>
+          <long-description/>
+          <tag line="482" name="param" description="The index of the vertex." type="mixed" variable="$index">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="482" name="return" description="The value of the vertex." type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="489">
+          <name>$index</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="503" package="PGraph">
+        <name>getWeight</name>
+        <full_name>getWeight</full_name>
+        <docblock line="494">
+          <description>Returns the weight of the edge.</description>
+          <long-description/>
+          <tag line="494" name="param" description="The vertex connected via an edge." type="mixed" variable="$srcIndex">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="494" name="param" description="The vertex connected via an edge." type="mixed" variable="$dstIndex">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="494" name="return" description="The weight of the edge.&#10;              FALSE if the edge doesn't exist." type="float">
+            <type by_reference="false">float</type>
+          </tag>
+        </docblock>
+        <argument line="503">
+          <name>$srcIndex</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="503">
+          <name>$dstIndex</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="514" package="PGraph">
+        <name>error</name>
+        <full_name>error</full_name>
+        <docblock line="508">
+          <description>Get the error message.</description>
+          <long-description/>
+          <tag line="508" name="return" description="The error message.&#10;               NULL if it doesn't exist." type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="529" package="PGraph">
+        <name>errno</name>
+        <full_name>errno</full_name>
+        <docblock line="523">
+          <description>Get the error number.</description>
+          <long-description/>
+          <tag line="523" name="return" description="The error number.&#10;            NULL if there is no error." type="int">
+            <type by_reference="false">int</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="549" package="PGraph">
+        <name>shortestPath</name>
+        <full_name>shortestPath</full_name>
+        <docblock line="538">
+          <description>Find the shortest path between two vertices.</description>
+          <long-description/>
+          <tag line="538" name="param" description="The start vertex." type="mixed" variable="$srcIndex">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="538" name="param" description="The destination vertex." type="mixed" variable="$dstIndex">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="538" name="return" description="The path between the source and the&#10;              destination. FALSE if there is no path&#10;              or there is a negative-weight cycle." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="549">
+          <name>$srcIndex</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="549">
+          <name>$dstIndex</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="566" package="PGraph">
+        <name>depthFirstSearch</name>
+        <full_name>depthFirstSearch</full_name>
+        <docblock line="558">
+          <description>Perform a Depth First Search starting from the given
+vertex.</description>
+          <long-description/>
+          <tag line="558" name="param" description="The index of the starting vertex." type="mixed" variable="$index">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="558" name="return" description="All the vertices traversed." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="566">
+          <name>$index</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="590" package="PGraph">
+        <name>breadthFirstSearch</name>
+        <full_name>breadthFirstSearch</full_name>
+        <docblock line="582">
+          <description>Perform a Breadth First Search starting from the given
+vertex.</description>
+          <long-description/>
+          <tag line="582" name="param" description="The index of the starting vertex." type="mixed" variable="$index">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="582" name="return" description="All the vertices traversed." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="590">
+          <name>$index</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="612" package="PGraph">
+        <name>getNeighbors</name>
+        <full_name>getNeighbors</full_name>
+        <docblock line="605">
+          <description>Get all the neighboring vertices of the given vertex.</description>
+          <long-description/>
+          <tag line="605" name="param" description="An index of the vertex." type="mixed" variable="$index">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="605" name="return" description="All the neighbors of the given vertex." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="612">
+          <name>$index</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="640" package="PGraph">
+        <name>_vertexExists</name>
+        <full_name>_vertexExists</full_name>
+        <docblock line="631">
+          <description>Check if the vertex with a given index exists.</description>
+          <long-description/>
+          <tag line="631" name="param" description="The index of the vertex." type="mixed" variable="$index">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="631" name="return" description="TRUE if the vertex exists.&#10;                FALSE otherwise." type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+        <argument line="640">
+          <name>$index</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="656" package="PGraph">
+        <name>_edgeExists</name>
+        <full_name>_edgeExists</full_name>
+        <docblock line="645">
+          <description>Check if there is an edge between two vertices.</description>
+          <long-description/>
+          <tag line="645" name="param" description="The vertex from which the edge&#10;                       GOES FROM." type="mixed" variable="$srcIndex">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="645" name="param" description="The vertex to which the edge&#10;                       GOES TO." type="mixed" variable="$dstIndex">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="645" name="return" description="TRUE if the edge exists.&#10;                FALSE otherwise." type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+        <argument line="656">
+          <name>$srcIndex</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="656">
+          <name>$dstIndex</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="680" package="PGraph">
+        <name>_verticesExist</name>
+        <full_name>_verticesExist</full_name>
+        <docblock line="671">
+          <description>Check if an array of vertices exist.</description>
+          <long-description/>
+          <tag line="671" name="param" description="The vertices that we want&#10;                       to check if exist." type="array" variable="$vertices">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="671" name="return" description="TRUE if all the vertices exist.&#10;                FALSE if at least 1 vertex doesn't exist." type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+        <argument line="680">
+          <name>$vertices</name>
+          <default/>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="725" package="PGraph">
+        <name>_traverseGraph</name>
+        <full_name>_traverseGraph</full_name>
+        <docblock line="710">
+          <description>A helper function used to perform either Depth First Search
+or Breadth First Search.</description>
+          <long-description/>
+          <tag line="710" name="param" description="The index of the starting vertex." type="mixed" variable="$index">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="710" name="param" description="Considering the usage of this&#10;                                   function, it'll be either a&#10;                                   Stack or Queue, depending&#10;                                   on whether it's a&#10;                                   Depth First Search or&#10;                                   Breadth First Search." type="\SplDoublyLinkedList" variable="$list">
+            <type by_reference="false">\SplDoublyLinkedList</type>
+          </tag>
+          <tag line="710" name="return" description="The list of vertices traversed. FALSE, if the vertex&#10;                doesn't exist." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="725">
+          <name>$index</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="725">
+          <name>$list</name>
+          <default/>
+          <type>\SplDoublyLinkedList</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="774" package="PGraph">
+        <name>_addToList</name>
+        <full_name>_addToList</full_name>
+        <docblock line="764">
+          <description>Add the value into the linked list.</description>
+          <long-description/>
+          <tag line="764" name="param" description="The index of a vertex." type="mixed" variable="$index">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="764" name="param" description="&amp;$list Considering the usage,&#10;                                  this will either be a Stack&#10;                                  or a Queue." type="\SplDoublyLinkedList" variable="$list">
+            <type by_reference="false">\SplDoublyLinkedList</type>
+          </tag>
+          <tag line="764" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="774">
+          <name>$index</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="774">
+          <name>$list</name>
+          <default/>
+          <type>\SplDoublyLinkedList</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="795" package="PGraph">
+        <name>_removeFromList</name>
+        <full_name>_removeFromList</full_name>
+        <docblock line="786">
+          <description>Remove an element from the Stack or Queue.</description>
+          <long-description/>
+          <tag line="786" name="param" description="&amp;$list Considering the usage, this will&#10;                                  either be a Stack or a Queue." type="\SplDoublyLinkedList" variable="$list">
+            <type by_reference="false">\SplDoublyLinkedList</type>
+          </tag>
+          <tag line="786" name="return" description="The index of a vertex that we removed from the list.&#10;              NULL, if the type of the list is not recognized." type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="795">
+          <name>$list</name>
+          <default/>
+          <type>\SplDoublyLinkedList</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="832" package="PGraph">
+        <name>_dijkstra</name>
+        <full_name>_dijkstra</full_name>
+        <docblock line="819">
+          <description>If there are no negative weight edges,
+use Dijkstra's algorithm to find the
+shortest path between two vertices.</description>
+          <long-description>&lt;p&gt;SOURCE: wikipedia.org&lt;/p&gt;</long-description>
+          <tag line="819" name="param" description="The starting vertex." type="mixed" variable="$srcIndex">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="819" name="param" description="The destination vertex." type="mixed" variable="$dstIndex">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="819" name="return" description="The path between two vertices.&#10;              FALSE if there is no path." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="832">
+          <name>$srcIndex</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="832">
+          <name>$dstIndex</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="global" line="918" package="PGraph">
+        <name>_bellmanFord</name>
+        <full_name>_bellmanFord</full_name>
+        <docblock line="905">
+          <description>If there is at least one negative weight edge,
+this is used to find the shortest path between
+two vertices.</description>
+          <long-description/>
+          <tag line="905" name="param" description="The starting vertex." type="mixed" variable="$srcIndex">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="905" name="param" description="The destination vertex." type="mixed" variable="$dstIndex">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="905" name="return" description="The path between two vertices.&#10;              FALSE if there is no path or&#10;              a negative cycle has been&#10;              detected." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+        <argument line="918">
+          <name>$srcIndex</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="918">
+          <name>$dstIndex</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="PGraphVertex.php" hash="8ec367c539c0bc96a4f7a2492298a06d" package="PGraph">
+    <docblock line="3">
+      <description>This is where we define the graph vertex file.</description>
+      <long-description>&lt;p&gt;ALL CLASSES
+AND FUNCTIONS WRITTEN ARE HERE ARE NOT TO BE INSTANTIATED
+BY THE USER.&lt;/p&gt;
+
+&lt;p&gt;PHP version 5.3&lt;/p&gt;
+
+&lt;p&gt;LICENSE: This source file is subject to version 3.01 of the PHP license
+that is available through the world-wide-web at the following URI:
+http://www.php.net/license/3_01.txt.  If you did not receive a copy of
+the PHP License and are unable to obtain it through the web, please
+send a note to license@php.net so we can mail you a copy immediately.&lt;/p&gt;</long-description>
+      <tag line="3" name="category" description="Graph_Vertex"/>
+      <tag line="3" name="package" description="PGraph"/>
+      <tag line="3" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
+      <tag line="3" name="copyright" description="2013 Vilius Zaikauskas"/>
+      <tag line="3" name="license" description="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+      <tag line="3" name="version" description="GIT: $Id$"/>
+      <tag line="3" name="link" description="http://pear.php.net/package/PGraph" link="http://pear.php.net/package/PGraph"/>
+      <tag line="3" name="since" description="File available since Release 1.0"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="global" line="42" package="PGraph">
+      <extends/>
+      <name>PGraphVertex</name>
+      <full_name>\PGraphVertex</full_name>
+      <docblock line="29">
+        <description>The main PGraph class that is intended for
+user usage.</description>
+        <long-description/>
+        <tag line="29" name="category" description="PGraphVertex"/>
+        <tag line="29" name="package" description="PGraph"/>
+        <tag line="29" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
+        <tag line="29" name="copyright" description="2013 Vilius Zaikauskas"/>
+        <tag line="29" name="license" description="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+        <tag line="29" name="version" description="Release: @package_version@"/>
+        <tag line="29" name="link" description="http://pear.php.net/package/PGraph" link="http://pear.php.net/package/PGraph"/>
+        <tag line="29" name="since" description="Class available since Release 1.0"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="49" namespace="global" package="Default">
+        <name>$_data</name>
+        <default/>
+        <docblock line="45">
+          <description/>
+          <long-description/>
+          <tag line="45" name="var" description="The data contained in the vertex." type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="55" namespace="global" package="Default">
+        <name>$_neighbors</name>
+        <default/>
+        <docblock line="51">
+          <description/>
+          <long-description/>
+          <tag line="51" name="var" description="The neighboring vertices of the current vertex." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="62" namespace="global" package="Default">
+        <name>$_weights</name>
+        <default/>
+        <docblock line="57">
+          <description/>
+          <long-description/>
+          <tag line="57" name="var" description="Edge weights of the edges going to the associated neighbor." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="69" package="PGraph">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="64">
+          <description>The constructor used to create the PGraphVertex object.</description>
+          <long-description/>
+          <tag line="64" name="param" description="- the data that is to be held by this vertex." type="mixed" variable="$data">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+        <argument line="69">
+          <name>$data</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="85" package="PGraph">
+        <name>addNeighbor</name>
+        <full_name>addNeighbor</full_name>
+        <docblock line="76">
+          <description>Add an edge going into the given vertex.</description>
+          <long-description/>
+          <tag line="76" name="param" description="the index of the vertex." type="mixed" variable="$index">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="76" name="param" description="the reference to the vertex." type="\PGraphVertex" variable="$vertex">
+            <type by_reference="false">\PGraphVertex</type>
+          </tag>
+          <tag line="76" name="param" description="the weight of the edge." type="float" variable="$weight">
+            <type by_reference="false">float</type>
+          </tag>
+          <tag line="76" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="85">
+          <name>$index</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="85">
+          <name>$vertex</name>
+          <default/>
+          <type>\PGraphVertex</type>
+        </argument>
+        <argument line="85">
+          <name>$weight</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="100" package="PGraph">
+        <name>removeNeighbor</name>
+        <full_name>removeNeighbor</full_name>
+        <docblock line="91">
+          <description>Remove the edge connecting this vertex
+and the other vertex.</description>
+          <long-description/>
+          <tag line="91" name="param" description="the index of the vertex&#10;                    to remove." type="mixed" variable="$index">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="91" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="100">
+          <name>$index</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="117" package="PGraph">
+        <name>getWeight</name>
+        <full_name>getWeight</full_name>
+        <docblock line="108">
+          <description>Get the weight of the neighbor.</description>
+          <long-description/>
+          <tag line="108" name="param" description="index of the neighbor vertex." type="mixed" variable="$index">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="108" name="return" description="the weight of the specified&#10;              vertex index. FALSE if the vertex&#10;              doesn't exist." type="float">
+            <type by_reference="false">float</type>
+          </tag>
+        </docblock>
+        <argument line="117">
+          <name>$index</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="133" package="PGraph">
+        <name>getData</name>
+        <full_name>getData</full_name>
+        <docblock line="126">
+          <description>Return the data that is contained
+in this vertex.</description>
+          <long-description/>
+          <tag line="126" name="return" description="the data contained in this&#10;              vertex." type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="144" package="PGraph">
+        <name>getNeighbors</name>
+        <full_name>getNeighbors</full_name>
+        <docblock line="138">
+          <description>Get the list of neighboring vertices.</description>
+          <long-description/>
+          <tag line="138" name="return" description="The list of neighboring&#10;              vertices." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="154" package="PGraph">
+        <name>getWeights</name>
+        <full_name>getWeights</full_name>
+        <docblock line="149">
+          <description>Get the edge weights array.</description>
+          <long-description/>
+          <tag line="149" name="return" description="- An array of edge weights." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="169" package="PGraph">
+        <name>setWeight</name>
+        <full_name>setWeight</full_name>
+        <docblock line="159">
+          <description>Set the weight of an edge
+connecting to the other vertex.</description>
+          <long-description/>
+          <tag line="159" name="param" description="The vertex index to which&#10;                        this edge connects." type="mixed" variable="$index">
+            <type by_reference="false">mixed</type>
+          </tag>
+          <tag line="159" name="param" description="The new edge weight." type="float" variable="$newWeight">
+            <type by_reference="false">float</type>
+          </tag>
+          <tag line="159" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="169">
+          <name>$index</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="169">
+          <name>$newWeight</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="Constants.php" hash="1ca2a45a6ecad08600898349242cafc7" package="PGraph">
+    <docblock line="3">
+      <description>All the constants are defined here.</description>
+      <long-description>&lt;p&gt;PHP version 5&lt;/p&gt;
+
+&lt;p&gt;LICENSE: This source file is subject to version 3.01 of the PHP license
+that is available through the world-wide-web at the following URI:
+http://www.php.net/license/3_01.txt.  If you did not receive a copy of
+the PHP License and are unable to obtain it through the web, please
+send a note to license@php.net so we can mail you a copy immediately.&lt;/p&gt;</long-description>
+      <tag line="3" name="category" description="Constants"/>
+      <tag line="3" name="package" description="PGraph"/>
+      <tag line="3" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
+      <tag line="3" name="copyright" description="2013 Vilius Zaikauskas"/>
+      <tag line="3" name="license" description="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+      <tag line="3" name="version" description="GIT: $Id$"/>
+      <tag line="3" name="link" description="http://pear.php.net/package/PGraph" link="http://pear.php.net/package/PGraph"/>
+      <tag line="3" name="since" description="File available since Release 1.0"/>
+    </docblock>
+    <constant namespace="global" line="25" package="PGraph">
+      <name>DELIMITER</name>
+      <full_name>\DELIMITER</full_name>
+      <value>", "</value>
+    </constant>
+    <constant namespace="global" line="28" package="PGraph">
+      <name>UNKNOWN_ERROR</name>
+      <full_name>\UNKNOWN_ERROR</full_name>
+      <value>"An unknown error has occured."</value>
+    </constant>
+    <constant namespace="global" line="31" package="PGraph">
+      <name>STACK</name>
+      <full_name>\STACK</full_name>
+      <value>"SplStack"</value>
+    </constant>
+    <constant namespace="global" line="32" package="PGraph">
+      <name>QUEUE</name>
+      <full_name>\QUEUE</full_name>
+      <value>"SplQueue"</value>
+    </constant>
+    <constant namespace="global" line="35" package="PGraph">
+      <name>NO_VERTEX</name>
+      <full_name>\NO_VERTEX</full_name>
+      <value>1</value>
+    </constant>
+    <constant namespace="global" line="36" package="PGraph">
+      <name>NO_EDGE</name>
+      <full_name>\NO_EDGE</full_name>
+      <value>2</value>
+    </constant>
+    <constant namespace="global" line="37" package="PGraph">
+      <name>EDGE_EXISTS</name>
+      <full_name>\EDGE_EXISTS</full_name>
+      <value>3</value>
+    </constant>
+    <constant namespace="global" line="38" package="PGraph">
+      <name>VERTEX_EXISTS</name>
+      <full_name>\VERTEX_EXISTS</full_name>
+      <value>4</value>
+    </constant>
+    <constant namespace="global" line="39" package="PGraph">
+      <name>NO_PATH</name>
+      <full_name>\NO_PATH</full_name>
+      <value>5</value>
+    </constant>
+    <constant namespace="global" line="40" package="PGraph">
+      <name>BAD_TYPE</name>
+      <full_name>\BAD_TYPE</full_name>
+      <value>6</value>
+    </constant>
+    <constant namespace="global" line="41" package="PGraph">
+      <name>NEG_CYCLE</name>
+      <full_name>\NEG_CYCLE</full_name>
+      <value>7</value>
+    </constant>
+    <constant namespace="global" line="45" package="PGraph">
+      <name>ARG_INDEX</name>
+      <full_name>\ARG_INDEX</full_name>
+      <value>"index"</value>
+    </constant>
+    <constant namespace="global" line="46" package="PGraph">
+      <name>ARG_INDEX1</name>
+      <full_name>\ARG_INDEX1</full_name>
+      <value>"index1"</value>
+    </constant>
+    <constant namespace="global" line="47" package="PGraph">
+      <name>ARG_INDEX2</name>
+      <full_name>\ARG_INDEX2</full_name>
+      <value>"index2"</value>
+    </constant>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <package name="PGraph" full_name="PGraph"/>
+  <namespace name="global" full_name="global"/>
+  <marker count="0">todo</marker>
+  <marker count="0">fixme</marker>
+  <deprecated count="0"/>
+</project>

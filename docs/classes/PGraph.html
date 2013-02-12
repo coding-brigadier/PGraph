@@ -1,0 +1,765 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \PGraph</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/PGraph.html"><i class="icon-folder-open"></i> PGraph</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: A constructor to create the PGraph."><span class="description">A constructor to create the PGraph.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_addEdge" title="addEdge :: Add an edge between two vertices (if it doesn't exist)."><span class="description">Add an edge between two vertices (if it doesn't exist).</span><pre>addEdge()</pre></a></li>
+<li class="method public "><a href="#method_addVertex" title="addVertex :: Add a new vertex into the graph."><span class="description">Add a new vertex into the graph.</span><pre>addVertex()</pre></a></li>
+<li class="method public "><a href="#method_breadthFirstSearch" title="breadthFirstSearch :: Perform a Breadth First Search starting from the given
+vertex."><span class="description">Perform a Breadth First Search starting from the given
+vertex.</span><pre>breadthFirstSearch()</pre></a></li>
+<li class="method public "><a href="#method_count" title="count :: Gives the number of vertices."><span class="description">Gives the number of vertices.</span><pre>count()</pre></a></li>
+<li class="method public "><a href="#method_current" title="current :: Gets the value of the currently pointed vertex."><span class="description">Gets the value of the currently pointed vertex.</span><pre>current()</pre></a></li>
+<li class="method public "><a href="#method_depthFirstSearch" title="depthFirstSearch :: Perform a Depth First Search starting from the given
+vertex."><span class="description">Perform a Depth First Search starting from the given
+vertex.</span><pre>depthFirstSearch()</pre></a></li>
+<li class="method public "><a href="#method_errno" title="errno :: Get the error number."><span class="description">Get the error number.</span><pre>errno()</pre></a></li>
+<li class="method public "><a href="#method_error" title="error :: Get the error message."><span class="description">Get the error message.</span><pre>error()</pre></a></li>
+<li class="method public "><a href="#method_getNeighbors" title="getNeighbors :: Get all the neighboring vertices of the given vertex."><span class="description">Get all the neighboring vertices of the given vertex.</span><pre>getNeighbors()</pre></a></li>
+<li class="method public "><a href="#method_getVertex" title="getVertex :: Get the value of the vertex."><span class="description">Get the value of the vertex.</span><pre>getVertex()</pre></a></li>
+<li class="method public "><a href="#method_getWeight" title="getWeight :: Returns the weight of the edge."><span class="description">Returns the weight of the edge.</span><pre>getWeight()</pre></a></li>
+<li class="method public "><a href="#method_key" title="key :: The index of the current vertex element."><span class="description">The index of the current vertex element.</span><pre>key()</pre></a></li>
+<li class="method public "><a href="#method_next" title="next :: Move the pointer to the next vertex."><span class="description">Move the pointer to the next vertex.</span><pre>next()</pre></a></li>
+<li class="method public "><a href="#method_offsetExists" title="offsetExists :: Check if the vertex with a given index exists."><span class="description">Check if the vertex with a given index exists.</span><pre>offsetExists()</pre></a></li>
+<li class="method public "><a href="#method_offsetGet" title="offsetGet :: Get the value of the vertex."><span class="description">Get the value of the vertex.</span><pre>offsetGet()</pre></a></li>
+<li class="method public "><a href="#method_offsetSet" title="offsetSet :: Add the vertex to the vertext array."><span class="description">Add the vertex to the vertext array.</span><pre>offsetSet()</pre></a></li>
+<li class="method public "><a href="#method_offsetUnset" title="offsetUnset :: Unset the array element."><span class="description">Unset the array element.</span><pre>offsetUnset()</pre></a></li>
+<li class="method public "><a href="#method_removeEdge" title="removeEdge :: Remove the edge (if exists)."><span class="description">Remove the edge (if exists).</span><pre>removeEdge()</pre></a></li>
+<li class="method public "><a href="#method_removeVertex" title="removeVertex :: Remove the vertex if it exists."><span class="description">Remove the vertex if it exists.</span><pre>removeVertex()</pre></a></li>
+<li class="method public "><a href="#method_rewind" title="rewind :: Move the pointer to an array of vertices
+to the beginning."><span class="description">Move the pointer to an array of vertices
+to the beginning.</span><pre>rewind()</pre></a></li>
+<li class="method public "><a href="#method_setValue" title="setValue :: Change the value of the already existing vertex."><span class="description">Change the value of the already existing vertex.</span><pre>setValue()</pre></a></li>
+<li class="method public "><a href="#method_setWeight" title="setWeight :: Provided the given vertices and the edge between them
+exists, change the weight of the edge."><span class="description">Provided the given vertices and the edge between them
+exists, change the weight of the edge.</span><pre>setWeight()</pre></a></li>
+<li class="method public "><a href="#method_shortestPath" title="shortestPath :: Find the shortest path between two vertices."><span class="description">Find the shortest path between two vertices.</span><pre>shortestPath()</pre></a></li>
+<li class="method public "><a href="#method_valid" title="valid :: Check if the array pointer is pointing to a valid
+array slot."><span class="description">Check if the array pointer is pointing to a valid
+array slot.</span><pre>valid()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method__addToList" title="_addToList :: Add the value into the linked list."><span class="description">Add the value into the linked list.</span><pre>_addToList()</pre></a></li>
+<li class="method private "><a href="#method__bellmanFord" title="_bellmanFord :: If there is at least one negative weight edge,
+this is used to find the shortest path between
+two vertices."><span class="description">If there is at least one negative weight edge,
+this is used to find the shortest path between
+two vertices.</span><pre>_bellmanFord()</pre></a></li>
+<li class="method private "><a href="#method__dijkstra" title="_dijkstra :: If there are no negative weight edges,
+use Dijkstra's algorithm to find the
+shortest path between two vertices."><span class="description">If there are no negative weight edges,
+use Dijkstra's algorithm to find the
+shortest path between two vertices.</span><pre>_dijkstra()</pre></a></li>
+<li class="method private "><a href="#method__edgeExists" title="_edgeExists :: Check if there is an edge between two vertices."><span class="description">Check if there is an edge between two vertices.</span><pre>_edgeExists()</pre></a></li>
+<li class="method private "><a href="#method__removeFromList" title="_removeFromList :: Remove an element from the Stack or Queue."><span class="description">Remove an element from the Stack or Queue.</span><pre>_removeFromList()</pre></a></li>
+<li class="method private "><a href="#method__traverseGraph" title="_traverseGraph :: A helper function used to perform either Depth First Search
+or Breadth First Search."><span class="description">A helper function used to perform either Depth First Search
+or Breadth First Search.</span><pre>_traverseGraph()</pre></a></li>
+<li class="method private "><a href="#method__vertexExists" title="_vertexExists :: Check if the vertex with a given index exists."><span class="description">Check if the vertex with a given index exists.</span><pre>_vertexExists()</pre></a></li>
+<li class="method private "><a href="#method__verticesExist" title="_verticesExist :: Check if an array of vertices exist."><span class="description">Check if an array of vertices exist.</span><pre>_verticesExist()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property__directed" title="$_directed :: "><span class="description">This graph is either directed or undirected.</span><pre>$_directed</pre></a></li>
+<li class="property private "><a href="#property__errno" title="$_errno :: "><span class="description">The last error number.</span><pre>$_errno</pre></a></li>
+<li class="property private "><a href="#property__error" title="$_error :: "><span class="description">The last error message.</span><pre>$_error</pre></a></li>
+<li class="property private "><a href="#property__negativeWeights" title="$_negativeWeights :: "><span class="description">The number of negative weight edges.</span><pre>$_negativeWeights</pre></a></li>
+<li class="property private "><a href="#property__vertices" title="$_vertices :: "><span class="description">A vertex list.</span><pre>$_vertices</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\PGraph"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/PGraph.html">PGraph</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">The main PGraph class that is intended for
+user usage.</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>PGraph</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/PGraph.html">PGraph</a></td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="mailto:zaikaus1@gmail.com">Vilius Zaikauskas</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>2013 Vilius Zaikauskas</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://www.php.net/license/3_01.txt">PHP License 3.01</a></td>
+</tr>
+<tr>
+<th>version</th>
+<td>Release: @package_version@</td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://pear.php.net/package/PGraph">http://pear.php.net/package/PGraph</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>Class available since Release 1.0</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>A constructor to create the PGraph.</h2>
+<pre>__construct(boolean $directed) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$directed</h4>
+<code>boolean</code><p>TRUE if we want to the graph to be directed.
+                         FALSE if we want it to be undirected.
+                         (Default: TRUE)</p>
+</div>
+</div></div>
+</div>
+<a id="method_addEdge"></a><div class="element clickable method public method_addEdge" data-toggle="collapse" data-target=".method_addEdge .collapse">
+<h2>Add an edge between two vertices (if it doesn't exist).</h2>
+<pre>addEdge(mixed $srcIndex, mixed $dstIndex, float $weight) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$srcIndex</h4>
+<code>mixed</code><p>The index of the first vertex.
+                       If the graph is undirected, the edge
+                       GOES FROM this vertex.</p></div>
+<div class="subelement argument">
+<h4>$dstIndex</h4>
+<code>mixed</code><p>The index of the second vertex.
+                       If the graph is directed, the edge
+                       GOES INTO this vertex.</p></div>
+<div class="subelement argument">
+<h4>$weight</h4>
+<code>float</code><p>The weight of the edge (Default: 0).</p>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_addVertex"></a><div class="element clickable method public method_addVertex" data-toggle="collapse" data-target=".method_addVertex .collapse">
+<h2>Add a new vertex into the graph.</h2>
+<pre>addVertex(mixed $index, mixed $value) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$index</h4>
+<code>mixed</code><p>The index of the next vertex</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>The value that the vertex will contain.</p></div>
+</div></div>
+</div>
+<a id="method_breadthFirstSearch"></a><div class="element clickable method public method_breadthFirstSearch" data-toggle="collapse" data-target=".method_breadthFirstSearch .collapse">
+<h2>Perform a Breadth First Search starting from the given
+vertex.</h2>
+<pre>breadthFirstSearch(mixed $index) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$index</h4>
+<code>mixed</code><p>The index of the starting vertex.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>All the vertices traversed.</div>
+</div></div>
+</div>
+<a id="method_count"></a><div class="element clickable method public method_count" data-toggle="collapse" data-target=".method_count .collapse">
+<h2>Gives the number of vertices.</h2>
+<pre>count() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>int</code>The number of vertices.</div>
+</div></div>
+</div>
+<a id="method_current"></a><div class="element clickable method public method_current" data-toggle="collapse" data-target=".method_current .collapse">
+<h2>Gets the value of the currently pointed vertex.</h2>
+<pre>current() : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>The value that is in the
+              currently pointed vertex.</div>
+</div></div>
+</div>
+<a id="method_depthFirstSearch"></a><div class="element clickable method public method_depthFirstSearch" data-toggle="collapse" data-target=".method_depthFirstSearch .collapse">
+<h2>Perform a Depth First Search starting from the given
+vertex.</h2>
+<pre>depthFirstSearch(mixed $index) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$index</h4>
+<code>mixed</code><p>The index of the starting vertex.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>All the vertices traversed.</div>
+</div></div>
+</div>
+<a id="method_errno"></a><div class="element clickable method public method_errno" data-toggle="collapse" data-target=".method_errno .collapse">
+<h2>Get the error number.</h2>
+<pre>errno() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>int</code>The error number.
+            NULL if there is no error.</div>
+</div></div>
+</div>
+<a id="method_error"></a><div class="element clickable method public method_error" data-toggle="collapse" data-target=".method_error .collapse">
+<h2>Get the error message.</h2>
+<pre>error() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The error message.
+               NULL if it doesn't exist.</div>
+</div></div>
+</div>
+<a id="method_getNeighbors"></a><div class="element clickable method public method_getNeighbors" data-toggle="collapse" data-target=".method_getNeighbors .collapse">
+<h2>Get all the neighboring vertices of the given vertex.</h2>
+<pre>getNeighbors(mixed $index) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$index</h4>
+<code>mixed</code><p>An index of the vertex.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>All the neighbors of the given vertex.</div>
+</div></div>
+</div>
+<a id="method_getVertex"></a><div class="element clickable method public method_getVertex" data-toggle="collapse" data-target=".method_getVertex .collapse">
+<h2>Get the value of the vertex.</h2>
+<pre>getVertex(mixed $index) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$index</h4>
+<code>mixed</code><p>The index of the vertex.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>The value of the vertex.</div>
+</div></div>
+</div>
+<a id="method_getWeight"></a><div class="element clickable method public method_getWeight" data-toggle="collapse" data-target=".method_getWeight .collapse">
+<h2>Returns the weight of the edge.</h2>
+<pre>getWeight(mixed $srcIndex, mixed $dstIndex) : float</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$srcIndex</h4>
+<code>mixed</code><p>The vertex connected via an edge.</p></div>
+<div class="subelement argument">
+<h4>$dstIndex</h4>
+<code>mixed</code><p>The vertex connected via an edge.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>float</code>The weight of the edge.
+              FALSE if the edge doesn't exist.</div>
+</div></div>
+</div>
+<a id="method_key"></a><div class="element clickable method public method_key" data-toggle="collapse" data-target=".method_key .collapse">
+<h2>The index of the current vertex element.</h2>
+<pre>key() : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>The index of the currently pointed
+              vertex.</div>
+</div></div>
+</div>
+<a id="method_next"></a><div class="element clickable method public method_next" data-toggle="collapse" data-target=".method_next .collapse">
+<h2>Move the pointer to the next vertex.</h2>
+<pre>next() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_offsetExists"></a><div class="element clickable method public method_offsetExists" data-toggle="collapse" data-target=".method_offsetExists .collapse">
+<h2>Check if the vertex with a given index exists.</h2>
+<pre>offsetExists(mixed $offset) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>mixed</code><p>The index of the vertex.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>TRUE if the vertex with a given index
+                exists. FALSE, otherwise.</div>
+</div></div>
+</div>
+<a id="method_offsetGet"></a><div class="element clickable method public method_offsetGet" data-toggle="collapse" data-target=".method_offsetGet .collapse">
+<h2>Get the value of the vertex.</h2>
+<pre>offsetGet(mixed $offset) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>mixed</code><p>The index we are accessing.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>The data value. NULL, if the there is no value
+                basedon the given index.</div>
+</div></div>
+</div>
+<a id="method_offsetSet"></a><div class="element clickable method public method_offsetSet" data-toggle="collapse" data-target=".method_offsetSet .collapse">
+<h2>Add the vertex to the vertext array.</h2>
+<pre>offsetSet(mixed $offset, mixed $value) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>mixed</code><p>The index of the vertex.</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>The data contained in the vertex.</p></div>
+</div></div>
+</div>
+<a id="method_offsetUnset"></a><div class="element clickable method public method_offsetUnset" data-toggle="collapse" data-target=".method_offsetUnset .collapse">
+<h2>Unset the array element.</h2>
+<pre>offsetUnset(mixed $offset) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>mixed</code><p>the index of an element to unset.</p></div>
+</div></div>
+</div>
+<a id="method_removeEdge"></a><div class="element clickable method public method_removeEdge" data-toggle="collapse" data-target=".method_removeEdge .collapse">
+<h2>Remove the edge (if exists).</h2>
+<pre>removeEdge(mixed $srcIndex, mixed $dstIndex) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$srcIndex</h4>
+<code>mixed</code><p>The index from which the edge GOES FROM.</p></div>
+<div class="subelement argument">
+<h4>$dstIndex</h4>
+<code>mixed</code><p>The index to which the edge GOES TO.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>TRUE if the edge was successfully removed.
+                FALSE otherwise.</div>
+</div></div>
+</div>
+<a id="method_removeVertex"></a><div class="element clickable method public method_removeVertex" data-toggle="collapse" data-target=".method_removeVertex .collapse">
+<h2>Remove the vertex if it exists.</h2>
+<pre>removeVertex(mixed $index) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$index</h4>
+<code>mixed</code><p>The index of the vertex we want to remove.</p></div>
+</div></div>
+</div>
+<a id="method_rewind"></a><div class="element clickable method public method_rewind" data-toggle="collapse" data-target=".method_rewind .collapse">
+<h2>Move the pointer to an array of vertices
+to the beginning.</h2>
+<pre>rewind() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_setValue"></a><div class="element clickable method public method_setValue" data-toggle="collapse" data-target=".method_setValue .collapse">
+<h2>Change the value of the already existing vertex.</h2>
+<pre>setValue(mixed $index, mixed $newValue) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$index</h4>
+<code>mixed</code><p>The index of the vertex.</p></div>
+<div class="subelement argument">
+<h4>$newValue</h4>
+<code>mixed</code><p>The new value that the vertex should contain.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>TRUE if the value has been changed successfuly.
+                FALSE otherwise.</div>
+</div></div>
+</div>
+<a id="method_setWeight"></a><div class="element clickable method public method_setWeight" data-toggle="collapse" data-target=".method_setWeight .collapse">
+<h2>Provided the given vertices and the edge between them
+exists, change the weight of the edge.</h2>
+<pre>setWeight(mixed $srcIndex, mixed $dstIndex, float $newWeight) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$srcIndex</h4>
+<code>mixed</code><p>The index of a vertex from which the edge
+                        GOES FROM.</p></div>
+<div class="subelement argument">
+<h4>$dstIndex</h4>
+<code>mixed</code><p>The index of a vertex to which the edge
+                        GOES TO.</p></div>
+<div class="subelement argument">
+<h4>$newWeight</h4>
+<code>float</code><p>The new weight of the edge.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>TRUE if the weight was successfully changed.
+                FALSE otherwise.</div>
+</div></div>
+</div>
+<a id="method_shortestPath"></a><div class="element clickable method public method_shortestPath" data-toggle="collapse" data-target=".method_shortestPath .collapse">
+<h2>Find the shortest path between two vertices.</h2>
+<pre>shortestPath(mixed $srcIndex, mixed $dstIndex) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$srcIndex</h4>
+<code>mixed</code><p>The start vertex.</p></div>
+<div class="subelement argument">
+<h4>$dstIndex</h4>
+<code>mixed</code><p>The destination vertex.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>The path between the source and the
+              destination. FALSE if there is no path
+              or there is a negative-weight cycle.</div>
+</div></div>
+</div>
+<a id="method_valid"></a><div class="element clickable method public method_valid" data-toggle="collapse" data-target=".method_valid .collapse">
+<h2>Check if the array pointer is pointing to a valid
+array slot.</h2>
+<pre>valid() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>TRUE if the current pointer is
+                pointing the valid slot.
+                FALSE, otherwise.</div>
+</div></div>
+</div>
+<a id="method__addToList"></a><div class="element clickable method private method__addToList" data-toggle="collapse" data-target=".method__addToList .collapse">
+<h2>Add the value into the linked list.</h2>
+<pre>_addToList(mixed $index, \SplDoublyLinkedList $list) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$index</h4>
+<code>mixed</code><p>The index of a vertex.</p></div>
+<div class="subelement argument">
+<h4>$list</h4>
+<code><a href="http://php.net/manual/en/class.spldoublylinkedlist.php">\SplDoublyLinkedList</a></code><p>&$list Considering the usage,
+                                  this will either be a Stack
+                                  or a Queue.</p>
+</div>
+</div></div>
+</div>
+<a id="method__bellmanFord"></a><div class="element clickable method private method__bellmanFord" data-toggle="collapse" data-target=".method__bellmanFord .collapse">
+<h2>If there is at least one negative weight edge,
+this is used to find the shortest path between
+two vertices.</h2>
+<pre>_bellmanFord(mixed $srcIndex, mixed $dstIndex) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$srcIndex</h4>
+<code>mixed</code><p>The starting vertex.</p></div>
+<div class="subelement argument">
+<h4>$dstIndex</h4>
+<code>mixed</code><p>The destination vertex.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>The path between two vertices.
+              FALSE if there is no path or
+              a negative cycle has been
+              detected.</div>
+</div></div>
+</div>
+<a id="method__dijkstra"></a><div class="element clickable method private method__dijkstra" data-toggle="collapse" data-target=".method__dijkstra .collapse">
+<h2>If there are no negative weight edges,
+use Dijkstra's algorithm to find the
+shortest path between two vertices.</h2>
+<pre>_dijkstra(mixed $srcIndex, mixed $dstIndex) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>SOURCE: wikipedia.org</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$srcIndex</h4>
+<code>mixed</code><p>The starting vertex.</p></div>
+<div class="subelement argument">
+<h4>$dstIndex</h4>
+<code>mixed</code><p>The destination vertex.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>The path between two vertices.
+              FALSE if there is no path.</div>
+</div></div>
+</div>
+<a id="method__edgeExists"></a><div class="element clickable method private method__edgeExists" data-toggle="collapse" data-target=".method__edgeExists .collapse">
+<h2>Check if there is an edge between two vertices.</h2>
+<pre>_edgeExists(mixed $srcIndex, mixed $dstIndex) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$srcIndex</h4>
+<code>mixed</code><p>The vertex from which the edge
+                       GOES FROM.</p></div>
+<div class="subelement argument">
+<h4>$dstIndex</h4>
+<code>mixed</code><p>The vertex to which the edge
+                       GOES TO.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>TRUE if the edge exists.
+                FALSE otherwise.</div>
+</div></div>
+</div>
+<a id="method__removeFromList"></a><div class="element clickable method private method__removeFromList" data-toggle="collapse" data-target=".method__removeFromList .collapse">
+<h2>Remove an element from the Stack or Queue.</h2>
+<pre>_removeFromList(\SplDoublyLinkedList $list) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$list</h4>
+<code><a href="http://php.net/manual/en/class.spldoublylinkedlist.php">\SplDoublyLinkedList</a></code><p>&$list Considering the usage, this will
+                                  either be a Stack or a Queue.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>The index of a vertex that we removed from the list.
+              NULL, if the type of the list is not recognized.</div>
+</div></div>
+</div>
+<a id="method__traverseGraph"></a><div class="element clickable method private method__traverseGraph" data-toggle="collapse" data-target=".method__traverseGraph .collapse">
+<h2>A helper function used to perform either Depth First Search
+or Breadth First Search.</h2>
+<pre>_traverseGraph(mixed $index, \SplDoublyLinkedList $list) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$index</h4>
+<code>mixed</code><p>The index of the starting vertex.</p></div>
+<div class="subelement argument">
+<h4>$list</h4>
+<code><a href="http://php.net/manual/en/class.spldoublylinkedlist.php">\SplDoublyLinkedList</a></code><p>Considering the usage of this
+                                   function, it'll be either a
+                                   Stack or Queue, depending
+                                   on whether it's a
+                                   Depth First Search or
+                                   Breadth First Search.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>The list of vertices traversed. FALSE, if the vertex
+                doesn't exist.</div>
+</div></div>
+</div>
+<a id="method__vertexExists"></a><div class="element clickable method private method__vertexExists" data-toggle="collapse" data-target=".method__vertexExists .collapse">
+<h2>Check if the vertex with a given index exists.</h2>
+<pre>_vertexExists(mixed $index) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$index</h4>
+<code>mixed</code><p>The index of the vertex.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>TRUE if the vertex exists.
+                FALSE otherwise.</div>
+</div></div>
+</div>
+<a id="method__verticesExist"></a><div class="element clickable method private method__verticesExist" data-toggle="collapse" data-target=".method__verticesExist .collapse">
+<h2>Check if an array of vertices exist.</h2>
+<pre>_verticesExist(array $vertices) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$vertices</h4>
+<code>array</code><p>The vertices that we want
+                       to check if exist.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>TRUE if all the vertices exist.
+                FALSE if at least 1 vertex doesn't exist.</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__directed"> </a><div class="element clickable property private property__directed" data-toggle="collapse" data-target=".property__directed .collapse">
+<h2>This graph is either directed or undirected.</h2>
+<pre>$_directed : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__errno"> </a><div class="element clickable property private property__errno" data-toggle="collapse" data-target=".property__errno .collapse">
+<h2>The last error number.</h2>
+<pre>$_errno : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__error"> </a><div class="element clickable property private property__error" data-toggle="collapse" data-target=".property__error .collapse">
+<h2>The last error message.</h2>
+<pre>$_error : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__negativeWeights"> </a><div class="element clickable property private property__negativeWeights" data-toggle="collapse" data-target=".property__negativeWeights .collapse">
+<h2>The number of negative weight edges.</h2>
+<pre>$_negativeWeights : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__vertices"> </a><div class="element clickable property private property__vertices" data-toggle="collapse" data-target=".property__vertices .collapse">
+<h2>A vertex list.</h2>
+<pre>$_vertices : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-01-29T23:46:04-06:00.<br></footer></div>
+</div>
+</body>
+</html>
