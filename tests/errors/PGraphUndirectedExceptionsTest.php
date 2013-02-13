@@ -48,7 +48,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Getting a non-existent vertex via array access.
      * 
-     * @expectedException NoVertexException
+     * @expectedException PGraphNoVertexException
      * 
      * @return void
      */
@@ -62,7 +62,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Getting a non-existen vertex via a library function.
      * 
-     * @expectedException NoVertexException
+     * @expectedException PGraphNoVertexException
      * 
      * @return void
      */
@@ -76,7 +76,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Attempt to unset a non-existent vertex via unset().
      * 
-     * @expectedException NoVertexException
+     * @expectedException PGraphNoVertexException
      * 
      * @return void
      */
@@ -90,7 +90,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Attempt to unset a non-existent vertex via offsetUnset().
      * 
-     * @expectedException NoVertexException
+     * @expectedException PGraphNoVertexException
      * 
      * @return void
      */
@@ -104,7 +104,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Attempt to add an edge when one vertex is missing.
      * 
-     * @expectedException NoVertexException
+     * @expectedException PGraphNoVertexException
      * 
      * @return void
      */
@@ -120,7 +120,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Attempt to add an edge when one vertex is missing.
      * 
-     * @expectedException NoVertexException
+     * @expectedException PGraphNoVertexException
      * 
      * @return void
      */
@@ -136,7 +136,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Attempt to add an edge when the edge already exists.
      * 
-     * @expectedException EdgeExistsException
+     * @expectedException PGraphEdgeExistsException
      * 
      * @return void
      */
@@ -157,7 +157,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Attempt to set the weight with a non-existen vertex.
      * 
-     * @expectedException NoVertexException
+     * @expectedException PGraphNoVertexException
      * 
      * @return void
      */
@@ -173,7 +173,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Attempt to set the weight with a non-existen vertex.
      * 
-     * @expectedException NoVertexException
+     * @expectedException PGraphNoVertexException
      * 
      * @return void
      */
@@ -189,7 +189,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Attempt to set the weight on a non-existent edge.
      * 
-     * @expectedException NoEdgeException
+     * @expectedException PGraphNoEdgeException
      * 
      * @return void
      */
@@ -206,7 +206,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Attempt to set a value on a non-existen vertex.
      * 
-     * @expectedException NoVertexException
+     * @expectedException PGraphNoVertexException
      * 
      * @return void
      */
@@ -220,7 +220,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Attempt to add a vertex that already exists.
      * 
-     * @expectedException VertexExistsException
+     * @expectedException PGraphVertexExistsException
      * 
      * @return void
      */
@@ -239,7 +239,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Attempt to remove a vertex that doesn't exist.
      * 
-     * @expectedException NoVertexException
+     * @expectedException PGraphNoVertexException
      * 
      * @return void
      */
@@ -253,7 +253,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Attempt to do an array access of a non-existen vertex.
      * 
-     * @expectedException NoVertexException
+     * @expectedException PGraphNoVertexException
      * 
      * @return void
      */
@@ -267,7 +267,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Attempt to get the value of a non-existent vertex.
      * 
-     * @expectedException NoVertexException
+     * @expectedException PGraphNoVertexException
      * 
      * @return void
      */
@@ -281,7 +281,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Attempt to get the weight of a non-existent edge.
      * 
-     * @expectedException NoVertexException
+     * @expectedException PGraphNoVertexException
      * 
      * @return void
      */
@@ -297,7 +297,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Attempt to get the weight of a non-existent edge.
      * 
-     * @expectedException NoVertexException
+     * @expectedException PGraphNoVertexException
      * 
      * @return void
      */
@@ -314,7 +314,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Attempt to get the weight of a non-existent edge.
      * 
-     * @expectedException NoVertexException
+     * @expectedException PGraphNoVertexException
      * 
      * @return void
      */
@@ -331,7 +331,7 @@ class PGraphUndirectedExceptionsTest extends
     /**
      * Attempt to get the weight of a non-existent edge.
      * 
-     * @expectedException NoEdgeException
+     * @expectedException PGraphNoEdgeException
      * 
      * @return void
      */
@@ -349,7 +349,7 @@ class PGraphUndirectedExceptionsTest extends
      * Test the shortest path algorithm when there is no
      * destination vertex. 
      * 
-     * @expectedException NoVertexException
+     * @expectedException PGraphNoVertexException
      * 
      * @return void
      */
@@ -366,7 +366,7 @@ class PGraphUndirectedExceptionsTest extends
      * Test the shortest path algorithm when there is no
      * source vertex. 
      * 
-     * @expectedException NoVertexException
+     * @expectedException PGraphNoVertexException
      * 
      * @return void
      */
@@ -384,7 +384,7 @@ class PGraphUndirectedExceptionsTest extends
      * Test the shortest path algorithm when there is no
      * path.
      * 
-     * @expectedException NoPathException
+     * @expectedException PGraphNoPathException
      * 
      * @return void
      */
@@ -412,7 +412,7 @@ class PGraphUndirectedExceptionsTest extends
      * If there is an edge with a negative weight,
      * that's considered as a negative cycle.
      * 
-     * @expectedException NegativeCycleException
+     * @expectedException PGraphNegativeCycleException
      * 
      * @return void
      */
@@ -441,7 +441,7 @@ class PGraphUndirectedExceptionsTest extends
      * Test the shortest path algorithm when there is a
      * negative weight cycle.
      * 
-     * @expectedException NegativeCycleException
+     * @expectedException PGraphNegativeCycleException
      * 
      * @return void
      */

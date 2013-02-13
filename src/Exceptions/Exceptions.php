@@ -15,7 +15,7 @@
  * @package   PGraph
  * @author    Vilius Zaikauskas <zaikaus1@gmail.com>
  * @copyright 2013 Vilius Zaikauskas
- * @license   http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @license   http://vzaikauskas.com/licenses/MIT.txt MIT
  * @version   GIT: $Id$
  * @link      http://pear.php.net/package/PGraph
  * @since     File available since Release 1.0
@@ -25,16 +25,16 @@ require_once "PGraphException.php";
 /**
  * Exception thrown if a vertex doesn't exist.
  * 
- * @category  NoVertexException
+ * @category  PGraphNoVertexException
  * @package   PGraph
  * @author    Vilius Zaikauskas <zaikaus1@gmail.com>
  * @copyright 2013 Vilius Zaikauskas
- * @license   http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @license   http://vzaikauskas.com/licenses/MIT.txt MIT
  * @version   Release: @package_version@
  * @link      http://pear.php.net/package/PGraph
  * @since     Class available since Release 1.0
  */
-class NoVertexException extends PGraphException
+class PGraphNoVertexException extends PGraphException
 {
 
     /**
@@ -54,16 +54,16 @@ class NoVertexException extends PGraphException
  * Exception thrown if an edge between 
  * certain vertices doesn't exist.
  * 
- * @category  NoEdgeException
+ * @category  PGraphNoEdgeException
  * @package   PGraph
  * @author    Vilius Zaikauskas <zaikaus1@gmail.com>
  * @copyright 2013 Vilius Zaikauskas
- * @license   http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @license   http://vzaikauskas.com/licenses/MIT.txt MIT
  * @version   Release: @package_version@
  * @link      http://pear.php.net/package/PGraph
  * @since     Class available since Release 1.0
  */
-class NoEdgeException extends PGraphException
+class PGraphNoEdgeException extends PGraphException
 {
 
     /**
@@ -83,16 +83,16 @@ class NoEdgeException extends PGraphException
  * Exception thrown if an edge between two vertices
  * exists.
  * 
- * @category  EdgeExistsException
+ * @category  PGraphEdgeExistsException
  * @package   PGraph
  * @author    Vilius Zaikauskas <zaikaus1@gmail.com>
  * @copyright 2013 Vilius Zaikauskas
- * @license   http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @license   http://vzaikauskas.com/licenses/MIT.txt MIT
  * @version   Release: @package_version@
  * @link      http://pear.php.net/package/PGraph
  * @since     Class available since Release 1.0
  */
-class EdgeExistsException extends PGraphException
+class PGraphEdgeExistsException extends PGraphException
 {
 
     /**
@@ -111,16 +111,16 @@ class EdgeExistsException extends PGraphException
 /**
  * Exception thrown if a vertex exists.
  * 
- * @category  VertexExistsException
+ * @category  PGraphVertexExistsException
  * @package   PGraph
  * @author    Vilius Zaikauskas <zaikaus1@gmail.com>
  * @copyright 2013 Vilius Zaikauskas
- * @license   http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @license   http://vzaikauskas.com/licenses/MIT.txt MIT
  * @version   Release: @package_version@
  * @link      http://pear.php.net/package/PGraph
  * @since     Class available since Release 1.0
  */
-class VertexExistsException extends PGraphException
+class PGraphVertexExistsException extends PGraphException
 {
     /**
      * Constructor to create the VertexExistsException.
@@ -138,16 +138,16 @@ class VertexExistsException extends PGraphException
  * Exception thrown if there is no path
  * betwee two vertices.
  * 
- * @category  NoPathException
+ * @category  PGraphNoPathException
  * @package   PGraph
  * @author    Vilius Zaikauskas <zaikaus1@gmail.com>
  * @copyright 2013 Vilius Zaikauskas
- * @license   http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @license   http://vzaikauskas.com/licenses/MIT.txt MIT
  * @version   Release: @package_version@
  * @link      http://pear.php.net/package/PGraph
  * @since     Class available since Release 1.0
  */
-class NoPathException extends PGraphException
+class PGraphNoPathException extends PGraphException
 {
     
     /**
@@ -166,16 +166,16 @@ class NoPathException extends PGraphException
  * Exception thrown if the parameter passed has an invalid
  * type.
  * 
- * @category  InvalidTypeException
+ * @category  PGraphInvalidTypeException
  * @package   PGraph
  * @author    Vilius Zaikauskas <zaikaus1@gmail.com>
  * @copyright 2013 Vilius Zaikauskas
- * @license   http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @license   http://vzaikauskas.com/licenses/MIT.txt MIT
  * @version   Release: @package_version@
  * @link      http://pear.php.net/package/PGraph
  * @since     Class available since Release 1.0
  */
-class InvalidTypeException extends PGraphException
+class PGraphInvalidTypeException extends PGraphException
 {
     /**
      * Constructor to create the InvalidTypeException.
@@ -190,16 +190,16 @@ class InvalidTypeException extends PGraphException
 /**
  * Exception thrown if a graph contains a negative cycle.
  * 
- * @category  NegativeCycleException
+ * @category  PGraphNegativeCycleException
  * @package   PGraph
  * @author    Vilius Zaikauskas <zaikaus1@gmail.com>
  * @copyright 2013 Vilius Zaikauskas
- * @license   http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @license   http://vzaikauskas.com/licenses/MIT.txt MIT
  * @version   Release: @package_version@
  * @link      http://pear.php.net/package/PGraph
  * @since     Class available since Release 1.0
  */
-class NegativeCycleException extends PGraphException
+class PGraphNegativeCycleException extends PGraphException
 {
     /**
      * Constructor to create the NegativeCycleException.

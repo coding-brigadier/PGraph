@@ -15,7 +15,7 @@
  * @package   PGraph
  * @author    Vilius Zaikauskas <zaikaus1@gmail.com>
  * @copyright 2013 Vilius Zaikauskas
- * @license   http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @license   http://vzaikauskas.com/licenses/MIT.txt MIT
  * @version   GIT: $Id$
  * @link      http://pear.php.net/package/PGraph
  * @since     File available since Release 1.0
@@ -31,7 +31,7 @@
  * @package   PGraph
  * @author    Vilius Zaikauskas <zaikaus1@gmail.com>
  * @copyright 2013 Vilius Zaikauskas
- * @license   http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @license   http://vzaikauskas.com/licenses/MIT.txt MIT
  * @version   Release: @package_version@
  * @link      http://pear.php.net/package/PGraph
  * @since     Class available since Release 1.0

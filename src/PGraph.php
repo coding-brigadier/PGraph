@@ -6,17 +6,11 @@
  *
  * PHP version 5.3
  *
- * LICENSE: This source file is subject to version 3.01 of the PHP license
- * that is available through the world-wide-web at the following URI:
- * http://www.php.net/license/3_01.txt.  If you did not receive a copy of
- * the PHP License and are unable to obtain it through the web, please
- * send a note to license@php.net so we can mail you a copy immediately.
- *
  * @category  Main
  * @package   PGraph
  * @author    Vilius Zaikauskas <zaikaus1@gmail.com>
  * @copyright 2013 Vilius Zaikauskas
- * @license   http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @license   http://vzaikauskas.com/licenses/MIT.txt MIT
  * @version   GIT: $package_id$
  * @link      http://pear.php.net/package/PGraph
  * @since     File available since Release 1.0
@@ -39,7 +33,7 @@ require_once "PGraphLinkedList.php";
  * @package   PGraph
  * @author    Vilius Zaikauskas <zaikaus1@gmail.com>
  * @copyright 2013 Vilius Zaikauskas
- * @license   http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @license   http://vzaikauskas.com/licenses/MIT.txt MIT
  * @version   Release: @package_version@
  * @link      http://pear.php.net/package/PGraph
  * @since     Class available since Release 1.0
@@ -178,7 +172,7 @@ class PGraph implements Iterator, ArrayAccess, Countable
         // we return NULL.
         if (!isset($this->_vertices[$index])) {
             $args = array(ARG_INDEX => $index);
-            throw new NoVertexException($args);
+            throw new PGraphNoVertexException($args);
         }
 
         // Otherwise get the vertex
@@ -232,7 +226,7 @@ class PGraph implements Iterator, ArrayAccess, Countable
             unset($this->_vertices[$index]);
         } else {
             $args = array(ARG_INDEX => $index);
-            throw new NoVertexException($args);
+            throw new PGraphNoVertexException($args);
         }
     }
 
@@ -258,16 +252,16 @@ class PGraph implements Iterator, ArrayAccess, Countable
         // Check if both vertices exist.
         if ($this->_vertexExists($srcIndex) === false) {
             $args = array(ARG_INDEX => $srcIndex);
-            $exception = 'NoVertexException';
+            $exception = 'PGraphNoVertexException';
         } elseif ($this->_vertexExists($dstIndex) === false) {
             $args = array(ARG_INDEX => $dstIndex);
-            $exception = 'NoVertexException';
+            $exception = 'PGraphNoVertexException';
         } elseif ($this->_edgeExists($srcIndex, $dstIndex) === true) {
             $args = array(
                 ARG_INDEX1 => $srcIndex, 
                 ARG_INDEX2 => $dstIndex
             );
-            $exception = 'EdgeExistsException';
+            $exception = 'PGraphEdgeExistsException';
         }
         
         // If we have an argument array,
@@ -315,16 +309,16 @@ class PGraph implements Iterator, ArrayAccess, Countable
     {        
         if (!isset($this->_vertices[$srcIndex])) {
             $args = array(ARG_INDEX => $srcIndex);
-            $exception = 'NoVertexException';
+            $exception = 'PGraphNoVertexException';
         } elseif (!isset($this->_vertices[$dstIndex])) {
             $args = array(ARG_INDEX => $srcIndex);
-            $exception = 'NoVertexException';
+            $exception = 'PGraphNoVertexException';
         } elseif ($this->_edgeExists($srcIndex, $dstIndex) === false) {
             $args = array(
                 ARG_INDEX1 => $srcIndex,
                 ARG_INDEX => $dstIndex
             );
-            $exception = 'NoEdgeException';
+            $exception = 'PGraphNoEdgeException';
         }
         
         if (isset($args)) {
@@ -362,7 +356,7 @@ class PGraph implements Iterator, ArrayAccess, Countable
     {
         if (!isset($this->_vertices[$index])) {
             $args = array(ARG_INDEX => $index);
-            throw new NoVertexException($args);
+            throw new PGraphNoVertexException($args);
         }
         
         $this->_vertices[$index] = $newValue;
@@ -380,16 +374,16 @@ class PGraph implements Iterator, ArrayAccess, Countable
     {
         if (!isset($this->_vertices[$srcIndex])) {
             $args = array(ARG_INDEX => $srcIndex);
-            $exception = 'NoVertexException';
+            $exception = 'PGraphNoVertexException';
         } elseif (!isset($this->_vertices[$dstIndex])) {
             $args = array(ARG_INDEX => $srcIndex);
-            $exception = 'NoVertexException';
+            $exception = 'PGraphNoVertexException';
         } elseif ($this->_edgeExists($srcIndex, $dstIndex) === false) {
             $args = array(
                 ARG_INDEX1 => $srcIndex,
                 ARG_INDEX => $dstIndex
             );
-            $exception = 'NoEdgeException';
+            $exception = 'PGraphNoEdgeException';
         }
         
         
@@ -435,7 +429,7 @@ class PGraph implements Iterator, ArrayAccess, Countable
             $this->offsetSet($index, $value);
         } else {
             $args = array(ARG_INDEX, $index);
-            throw new VertexExistsException($args);
+            throw new PGraphVertexExistsException($args);
         }
     }
 
@@ -454,7 +448,7 @@ class PGraph implements Iterator, ArrayAccess, Countable
             $this->offsetUnset($index);
         } else {
             $args = array(ARG_INDEX, $index);
-            throw new NoVertexException($args);
+            throw new PGraphNoVertexException($args);
         }
     }
 
@@ -488,16 +482,16 @@ class PGraph implements Iterator, ArrayAccess, Countable
     {
         if (!isset($this->_vertices[$srcIndex])) {
             $args = array(ARG_INDEX => $srcIndex);
-            $exception = 'NoVertexException';
+            $exception = 'PGraphNoVertexException';
         } elseif (!isset($this->_vertices[$dstIndex])) {
             $args = array(ARG_INDEX => $srcIndex);
-            $exception = 'NoVertexException';
+            $exception = 'PGraphNoVertexException';
         } elseif ($this->_edgeExists($srcIndex, $dstIndex) === false) {
             $args = array(
                 ARG_INDEX1 => $srcIndex,
                 ARG_INDEX2 => $dstIndex
             );
-            $exception = 'NoEdgeException';
+            $exception = 'PGraphNoEdgeException';
         }
         
         
@@ -539,7 +533,7 @@ class PGraph implements Iterator, ArrayAccess, Countable
         // If at least one vertex doesn't exist
         // throw an exception
         if (isset($args)) {
-            throw new NoVertexException($args);
+            throw new PGraphNoVertexException($args);
         }
         
         if ($this->_negativeWeights == 0) {
@@ -596,7 +590,7 @@ class PGraph implements Iterator, ArrayAccess, Countable
         // throw an exception.
         if ($this->_vertexExists($index) === false) {
             $args = array(ARG_INDEX => $index);
-            throw new NoVertexException($args);
+            throw new PGraphNoVertexException($args);
         }
         
         $vertex = $this->_vertices[$index];
@@ -661,7 +655,7 @@ class PGraph implements Iterator, ArrayAccess, Countable
         // and return FALSE.
         if ($this->_vertexExists($index) === false) {
             $args = array(ARG_INDEX => $index);
-            throw new NoVertexException($args);
+            throw new PGraphNoVertexException($args);
         }
 
 
@@ -796,7 +790,7 @@ class PGraph implements Iterator, ArrayAccess, Countable
                     ARG_INDEX2 => $dstIndex
                 );
                 
-                throw new NoPathException($args);
+                throw new PGraphNoPathException($args);
             }
             
             if ($currIndex == $dstIndex) {
@@ -844,7 +838,7 @@ class PGraph implements Iterator, ArrayAccess, Countable
                 ARG_INDEX1 => $srcIndex,
                 ARG_INDEX2 => $dstIndex
             );
-            throw new NoPathException($args);
+            throw new PGraphNoPathException($args);
         }
         
         $sequence[] = $srcIndex;
@@ -930,7 +924,7 @@ class PGraph implements Iterator, ArrayAccess, Countable
                 $weight = $weights[$nIndex];
                 
                 if ($dist[$vIndex] + $weight < $dist[$nIndex]) {
-                    throw new NegativeCycleException();
+                    throw new PGraphNegativeCycleException();
                 }
             }
         }
@@ -949,7 +943,7 @@ class PGraph implements Iterator, ArrayAccess, Countable
                 ARG_INDEX1 => $srcIndex,
                 ARG_INDEX2 => $dstIndex
             );
-            throw new NoPathException($args);
+            throw new PGraphNoPathException($args);
         }
         
         $sequenceRev[] = $srcIndex;
