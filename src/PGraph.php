@@ -673,7 +673,7 @@ class PGraph implements Iterator, ArrayAccess, Countable
                 continue;
             }
 
-            $vertices[$currIndex] = $currVertex->getData();
+            $vertices[$currIndex] = $currVertex;
 
 
             $neighbors = $currVertex->getNeighbors();
@@ -684,7 +684,9 @@ class PGraph implements Iterator, ArrayAccess, Countable
             }
         }
 
-        return $vertices;
+        $vertexIndeces = array_keys($vertices);
+
+        return $vertexIndeces;
     }
 
     /**
