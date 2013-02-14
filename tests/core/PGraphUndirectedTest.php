@@ -339,15 +339,16 @@ class PGraphUndirectedTest extends PHPUnit_Framework_TestCase
         
         $sequence = $graph->depthFirstSearch(0);
 
-        
         $expectedSequence = array(
-            0 => 0, 
-            2 => 2, 
-            14 => 14, 
-            7 => 7, 
-            5 => 5, 
-            10 => 10
+            0, 
+            2,
+            14,
+            7, 
+            10, 
+            5
         );
+
+
         
         $this->assertEquals($sequence, $expectedSequence);
     }
@@ -374,15 +375,15 @@ class PGraphUndirectedTest extends PHPUnit_Framework_TestCase
         $graph->addEdge(14, 7, 312);
         
         
-        $sequence = $graph->depthFirstSearch(0);
-        
+        $sequence = $graph->breadthFirstSearch(0);
+       
         $expectedSequence = array(
-            0 => 0, 
-            5 => 5,
-            2 => 2,
-            10 => 10,
-            7 => 7,
-            14 => 14
+            0, 
+            5,
+            2,
+            10,
+            7,
+            14
         );
         
         $this->assertEquals($sequence, $expectedSequence);
