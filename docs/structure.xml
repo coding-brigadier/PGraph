@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project version="2.0.0a12" title="">
-  <file path="Exceptions/Exceptions.php" hash="23828529817ad0310374a780e33b2485" package="PGraph">
+  <file path="Exceptions/Exceptions.php" hash="0d7dc0870367df92fcf20dcfa26dc5ff" package="PGraph">
     <docblock line="3">
       <description>A collection of Exception classes.</description>
       <long-description>&lt;p&gt;PHP version 5.3&lt;/p&gt;
@@ -24,12 +24,12 @@ send a note to license@php.net so we can mail you a copy immediately.&lt;/p&gt;<
     </include>
     <class final="false" abstract="false" namespace="global" line="37" package="PGraph">
       <extends>\PGraphException</extends>
-      <name>NoVertexException</name>
-      <full_name>\NoVertexException</full_name>
+      <name>PGraphNoVertexException</name>
+      <full_name>\PGraphNoVertexException</full_name>
       <docblock line="25">
         <description>Exception thrown if a vertex doesn't exist.</description>
         <long-description></long-description>
-        <tag line="25" name="category" description="NoVertexException"/>
+        <tag line="25" name="category" description="PGraphNoVertexException"/>
         <tag line="25" name="package" description="PGraph"/>
         <tag line="25" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
         <tag line="25" name="copyright" description="2013 Vilius Zaikauskas"/>
@@ -57,13 +57,13 @@ send a note to license@php.net so we can mail you a copy immediately.&lt;/p&gt;<
     </class>
     <class final="false" abstract="false" namespace="global" line="66" package="PGraph">
       <extends>\PGraphException</extends>
-      <name>NoEdgeException</name>
-      <full_name>\NoEdgeException</full_name>
+      <name>PGraphNoEdgeException</name>
+      <full_name>\PGraphNoEdgeException</full_name>
       <docblock line="53">
         <description>Exception thrown if an edge between
 certain vertices doesn't exist.</description>
         <long-description></long-description>
-        <tag line="53" name="category" description="NoEdgeException"/>
+        <tag line="53" name="category" description="PGraphNoEdgeException"/>
         <tag line="53" name="package" description="PGraph"/>
         <tag line="53" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
         <tag line="53" name="copyright" description="2013 Vilius Zaikauskas"/>
@@ -91,13 +91,13 @@ certain vertices doesn't exist.</description>
     </class>
     <class final="false" abstract="false" namespace="global" line="95" package="PGraph">
       <extends>\PGraphException</extends>
-      <name>EdgeExistsException</name>
-      <full_name>\EdgeExistsException</full_name>
+      <name>PGraphEdgeExistsException</name>
+      <full_name>\PGraphEdgeExistsException</full_name>
       <docblock line="82">
         <description>Exception thrown if an edge between two vertices
 exists.</description>
         <long-description></long-description>
-        <tag line="82" name="category" description="EdgeExistsException"/>
+        <tag line="82" name="category" description="PGraphEdgeExistsException"/>
         <tag line="82" name="package" description="PGraph"/>
         <tag line="82" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
         <tag line="82" name="copyright" description="2013 Vilius Zaikauskas"/>
@@ -125,12 +125,12 @@ exists.</description>
     </class>
     <class final="false" abstract="false" namespace="global" line="123" package="PGraph">
       <extends>\PGraphException</extends>
-      <name>VertexExistsException</name>
-      <full_name>\VertexExistsException</full_name>
+      <name>PGraphVertexExistsException</name>
+      <full_name>\PGraphVertexExistsException</full_name>
       <docblock line="111">
         <description>Exception thrown if a vertex exists.</description>
         <long-description></long-description>
-        <tag line="111" name="category" description="VertexExistsException"/>
+        <tag line="111" name="category" description="PGraphVertexExistsException"/>
         <tag line="111" name="package" description="PGraph"/>
         <tag line="111" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
         <tag line="111" name="copyright" description="2013 Vilius Zaikauskas"/>
@@ -158,13 +158,13 @@ exists.</description>
     </class>
     <class final="false" abstract="false" namespace="global" line="150" package="PGraph">
       <extends>\PGraphException</extends>
-      <name>NoPathException</name>
-      <full_name>\NoPathException</full_name>
+      <name>PGraphNoPathException</name>
+      <full_name>\PGraphNoPathException</full_name>
       <docblock line="137">
         <description>Exception thrown if there is no path
 betwee two vertices.</description>
         <long-description></long-description>
-        <tag line="137" name="category" description="NoPathException"/>
+        <tag line="137" name="category" description="PGraphNoPathException"/>
         <tag line="137" name="package" description="PGraph"/>
         <tag line="137" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
         <tag line="137" name="copyright" description="2013 Vilius Zaikauskas"/>
@@ -192,13 +192,13 @@ betwee two vertices.</description>
     </class>
     <class final="false" abstract="false" namespace="global" line="178" package="PGraph">
       <extends>\PGraphException</extends>
-      <name>InvalidTypeException</name>
-      <full_name>\InvalidTypeException</full_name>
+      <name>PGraphInvalidTypeException</name>
+      <full_name>\PGraphInvalidTypeException</full_name>
       <docblock line="165">
         <description>Exception thrown if the parameter passed has an invalid
 type.</description>
         <long-description></long-description>
-        <tag line="165" name="category" description="InvalidTypeException"/>
+        <tag line="165" name="category" description="PGraphInvalidTypeException"/>
         <tag line="165" name="package" description="PGraph"/>
         <tag line="165" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
         <tag line="165" name="copyright" description="2013 Vilius Zaikauskas"/>
@@ -218,12 +218,12 @@ type.</description>
     </class>
     <class final="false" abstract="false" namespace="global" line="202" package="PGraph">
       <extends>\PGraphException</extends>
-      <name>NegativeCycleException</name>
-      <full_name>\NegativeCycleException</full_name>
+      <name>PGraphNegativeCycleException</name>
+      <full_name>\PGraphNegativeCycleException</full_name>
       <docblock line="190">
         <description>Exception thrown if a graph contains a negative cycle.</description>
         <long-description></long-description>
-        <tag line="190" name="category" description="NegativeCycleException"/>
+        <tag line="190" name="category" description="PGraphNegativeCycleException"/>
         <tag line="190" name="package" description="PGraph"/>
         <tag line="190" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
         <tag line="190" name="copyright" description="2013 Vilius Zaikauskas"/>
@@ -270,7 +270,7 @@ send a note to license@php.net so we can mail you a copy immediately.&lt;/p&gt;<
       <docblock line="26">
         <description>The main Exception class that is intended for
 being the benchmark for all Exceptions.</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="26" name="category" description="PGraphException"/>
         <tag line="26" name="package" description="PGraph"/>
         <tag line="26" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
@@ -284,8 +284,8 @@ being the benchmark for all Exceptions.</description>
         <name>$_messages</name>
         <default>null</default>
         <docblock line="41">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="41" name="var" description="Exception messages." type="array">
             <type by_reference="false">array</type>
           </tag>
@@ -296,7 +296,7 @@ being the benchmark for all Exceptions.</description>
         <full_name>__construct</full_name>
         <docblock line="47">
           <description>PGraphException Constructor.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="47" name="param" description="Values to be embedded into&#10;                    the messages." type="array" variable="$args">
             <type by_reference="false">array</type>
           </tag>
@@ -306,12 +306,12 @@ being the benchmark for all Exceptions.</description>
         </docblock>
         <argument line="54">
           <name>$args</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="54">
           <name>$index</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -321,7 +321,7 @@ being the benchmark for all Exceptions.</description>
         <docblock line="71">
           <description>Initialize the $_messages array if
 it hasn't been done so.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="71" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
@@ -329,7 +329,7 @@ it hasn't been done so.</description>
       </method>
     </class>
   </file>
-  <file path="PGraph.php" hash="e21ba36866a5845914fe389336ff3e1a" package="PGraph">
+  <file path="PGraph.php" hash="158908880d8da7f44832fc395901a96e" package="PGraph">
     <docblock line="3">
       <description>The main PGraph file.</description>
       <long-description>&lt;p&gt;This is where all the functions used
@@ -1151,7 +1151,7 @@ BY THE USER.&lt;/p&gt;
       <docblock line="23">
         <description>The main PGraph class that is intended for
 user usage.</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="23" name="category" description="PGraphVertex"/>
         <tag line="23" name="package" description="PGraph"/>
         <tag line="23" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
@@ -1163,10 +1163,10 @@ user usage.</description>
       </docblock>
       <property final="false" static="false" visibility="private" line="43" namespace="global" package="Default">
         <name>$_data</name>
-        <default></default>
+        <default/>
         <docblock line="39">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="39" name="var" description="The data contained in the vertex." type="mixed">
             <type by_reference="false">mixed</type>
           </tag>
@@ -1174,10 +1174,10 @@ user usage.</description>
       </property>
       <property final="false" static="false" visibility="private" line="49" namespace="global" package="Default">
         <name>$_neighbors</name>
-        <default></default>
+        <default/>
         <docblock line="45">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="45" name="var" description="The neighboring vertices of the current vertex." type="array">
             <type by_reference="false">array</type>
           </tag>
@@ -1185,10 +1185,10 @@ user usage.</description>
       </property>
       <property final="false" static="false" visibility="private" line="56" namespace="global" package="Default">
         <name>$_weights</name>
-        <default></default>
+        <default/>
         <docblock line="51">
-          <description></description>
-          <long-description></long-description>
+          <description/>
+          <long-description/>
           <tag line="51" name="var" description="Edge weights of the edges going to the associated neighbor." type="array">
             <type by_reference="false">array</type>
           </tag>
@@ -1199,14 +1199,14 @@ user usage.</description>
         <full_name>__construct</full_name>
         <docblock line="58">
           <description>The constructor used to create the PGraphVertex object.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="58" name="param" description="- the data that is to be held by this vertex." type="mixed" variable="$data">
             <type by_reference="false">mixed</type>
           </tag>
         </docblock>
         <argument line="63">
           <name>$data</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1215,7 +1215,7 @@ user usage.</description>
         <full_name>addNeighbor</full_name>
         <docblock line="70">
           <description>Add an edge going into the given vertex.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="70" name="param" description="the index of the vertex." type="mixed" variable="$index">
             <type by_reference="false">mixed</type>
           </tag>
@@ -1231,17 +1231,17 @@ user usage.</description>
         </docblock>
         <argument line="79">
           <name>$index</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="79">
           <name>$vertex</name>
-          <default></default>
+          <default/>
           <type>\PGraphVertex</type>
         </argument>
         <argument line="79">
           <name>$weight</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1251,7 +1251,7 @@ user usage.</description>
         <docblock line="85">
           <description>Remove the edge connecting this vertex
 and the other vertex.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="85" name="param" description="the index of the vertex&#10;                    to remove." type="mixed" variable="$index">
             <type by_reference="false">mixed</type>
           </tag>
@@ -1261,7 +1261,7 @@ and the other vertex.</description>
         </docblock>
         <argument line="94">
           <name>$index</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1270,7 +1270,7 @@ and the other vertex.</description>
         <full_name>getWeight</full_name>
         <docblock line="102">
           <description>Get the weight of the neighbor.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="102" name="param" description="index of the neighbor vertex." type="mixed" variable="$index">
             <type by_reference="false">mixed</type>
           </tag>
@@ -1280,7 +1280,7 @@ and the other vertex.</description>
         </docblock>
         <argument line="111">
           <name>$index</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1290,7 +1290,7 @@ and the other vertex.</description>
         <docblock line="120">
           <description>Return the data that is contained
 in this vertex.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="120" name="return" description="the data contained in this&#10;              vertex." type="mixed">
             <type by_reference="false">mixed</type>
           </tag>
@@ -1301,7 +1301,7 @@ in this vertex.</description>
         <full_name>getNeighbors</full_name>
         <docblock line="132">
           <description>Get the list of neighboring vertices.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="132" name="return" description="The list of neighboring&#10;              vertices." type="array">
             <type by_reference="false">array</type>
           </tag>
@@ -1312,7 +1312,7 @@ in this vertex.</description>
         <full_name>getWeights</full_name>
         <docblock line="143">
           <description>Get the edge weights array.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="143" name="return" description="- An array of edge weights." type="array">
             <type by_reference="false">array</type>
           </tag>
@@ -1324,7 +1324,7 @@ in this vertex.</description>
         <docblock line="153">
           <description>Set the weight of an edge
 connecting to the other vertex.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="153" name="param" description="The vertex index to which&#10;                        this edge connects." type="mixed" variable="$index">
             <type by_reference="false">mixed</type>
           </tag>
@@ -1337,12 +1337,12 @@ connecting to the other vertex.</description>
         </docblock>
         <argument line="163">
           <name>$index</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="163">
           <name>$newWeight</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -1372,7 +1372,7 @@ would've taken much longer.&lt;/p&gt;
       <full_name>\PGraphLinkedList</full_name>
       <docblock line="21">
         <description>Extension of the SPLDoublyLinkedList class.</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="21" name="category" description="PGGraphLinkedList"/>
         <tag line="21" name="package" description="PGraph"/>
         <tag line="21" name="author" description="Vilius Zaikauskas &lt;zaikaus1@gmail.com&gt;"/>
@@ -1388,7 +1388,7 @@ would've taken much longer.&lt;/p&gt;
         <docblock line="36">
           <description>Removes the vertex with the smallest
 distance value and returns it.</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="36" name="param" description="The distance values&#10;                        of vertices." type="array" variable="$distances">
             <type by_reference="false">array</type>
           </tag>
@@ -1398,7 +1398,7 @@ distance value and returns it.</description>
         </docblock>
         <argument line="47">
           <name>$distances</name>
-          <default></default>
+          <default/>
           <type>array</type>
         </argument>
       </method>

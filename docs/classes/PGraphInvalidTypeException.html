@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>phpDocumentor » \PGraphException</title>
+<title>phpDocumentor » \PGraphInvalidTypeException</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -55,10 +55,10 @@
 <ul class="side-nav nav nav-list">
 <li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
-                    <ul><li class="method public "><a href="#method___construct" title="__construct :: PGraphException Constructor."><span class="description">PGraphException Constructor.</span><pre>__construct()</pre></a></li></ul>
+                    <ul><li class="method public "><a href="#method___construct" title="__construct :: Constructor to create the InvalidTypeException."><span class="description">Constructor to create the InvalidTypeException.</span><pre>__construct()</pre></a></li></ul>
 </li>
 <li class="nav-header private">» Private
-                    <ul><li class="method private "><a href="#method__initMessages" title="_initMessages :: Initialize the $_messages array if
+                    <ul><li class="method private inherited"><a href="#method__initMessages" title="_initMessages :: Initialize the $_messages array if
 it hasn't been done so."><span class="description">Initialize the $_messages array if
 it hasn't been done so.</span><pre>_initMessages()</pre></a></li></ul>
 </li>
@@ -67,29 +67,29 @@ it hasn't been done so.</span><pre>_initMessages()</pre></a></li></ul>
                     <ul></ul>
 </li>
 <li class="nav-header private">» Private
-                    <ul><li class="property private "><a href="#property__messages" title="$_messages :: "><span class="description">Exception messages.</span><pre>$_messages</pre></a></li></ul>
+                    <ul><li class="property private inherited"><a href="#property__messages" title="$_messages :: "><span class="description">Exception messages.</span><pre>$_messages</pre></a></li></ul>
 </li>
 </ul>
 </div>
 <div class="span8">
-<a id="\PGraphException"></a><ul class="breadcrumb">
+<a id="\PGraphInvalidTypeException"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li><a href="../namespaces/global.html">global</a></li>
 <li class="active">
-<span class="divider">\</span><a href="../classes/PGraphException.html">PGraphException</a>
+<span class="divider">\</span><a href="../classes/PGraphInvalidTypeException.html">PGraphInvalidTypeException</a>
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">The main Exception class that is intended for
-being the benchmark for all Exceptions.</p>
+<p class="short_description">Exception thrown if the parameter passed has an invalid
+type.</p>
 <div class="details">
 <div class="long_description"></div>
 <table class="table table-bordered">
 <tr>
 <th>category</th>
-<td>PGraphException</td>
+<td>PGraphInvalidTypeException</td>
 </tr>
 <tr>
 <th>package</th>
@@ -123,35 +123,39 @@ being the benchmark for all Exceptions.</p>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
-<h2>PGraphException Constructor.</h2>
-<pre>__construct(array $args, int $index) </pre>
+<h2>Constructor to create the InvalidTypeException.</h2>
+<pre>__construct() </pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$args</h4>
-<code>array</code><p>Values to be embedded into
-                    the messages.</p></div>
-<div class="subelement argument">
-<h4>$index</h4>
-<code>int</code><p>The Exception message index.</p></div>
-</div></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method__initMessages"></a><div class="element clickable method private method__initMessages" data-toggle="collapse" data-target=".method__initMessages .collapse">
 <h2>Initialize the $_messages array if
 it hasn't been done so.</h2>
 <pre>_initMessages() : void</pre>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\PGraphException::_initMessages()</td>
+</tr></table>
+</div></div>
 </div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
 <a id="property__messages"> </a><div class="element clickable property private property__messages" data-toggle="collapse" data-target=".property__messages .collapse">
 <h2>Exception messages.</h2>
 <pre>$_messages : array</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\PGraphException::$$_messages</td>
+</tr></table>
+</div></div>
 </div>
 </div>
 </div>
