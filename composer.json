@@ -1,0 +1,23 @@
+{
+    "name": "PEAR2/PGraph",
+    "type": "library",
+    "description": "A PHP Graph Data Structure Manipulation Library",
+    "keywords": ["graph","vertex","vertices","edge","edges","Dijkstra","Bellman","Ford","DFS","BFS"],
+    "homepage": "http://github.com/Willux/PGraph",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vilius Zaikauskas",
+            "email": "zaikaus1@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "PGraph": "src/"
+        }
+    }
+}
