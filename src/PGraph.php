@@ -25,20 +25,21 @@
  *
  * @return void
  */
-spl_autoload_register(function ($name)
-{
-    // First check this folder
-    $path = __DIR__ . '/' . $name . '.php';
+spl_autoload_register(
+    function ($name) {
+        // First check this folder
+        $path = __DIR__ . '/' . $name . '.php';
 
-    if (file_exists($path)) {
-        include $path;
-        return;
+        if (file_exists($path)) {
+            include $path;
+            return;
+        }
+
+        // If none of the folders worked, we can include the exceptions folder
+        include "Exceptions/Exceptions.php";
+
     }
-
-    // If none of the folders worked, we can include the exceptions folder
-    include "Exceptions/Exceptions.php";
-
-});
+);
 
 
 
