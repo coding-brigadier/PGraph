@@ -21,7 +21,31 @@
  * @since     File available since Release 1.0
  */
 
-include "PGraphException.php";
+/*
+ * Class autoloader for PGraph
+ *
+ * @param string $name The name of the class to load.
+ *
+ * @return void
+ */
+function __autoload($name)
+{
+    $folders = array('.');
+
+    foreach ($folders as $folder) {
+        $path = $folder . '/' . $name . '.php';
+
+        if (file_exists($path) === true) {
+            include $path;
+            return;
+        }
+    }
+    
+    // If none of the folders worked, we can include the exceptions folder
+    include "Exceptions/Exceptions.php";
+
+}
+
 
 
 /**

@@ -38,6 +38,19 @@
  */
 class PGraphException extends Exception
 {
+
+    const ARG_INDEX = "index";
+    const ARG_INDEX1 = "index1";
+    const ARG_INDEX2 = "index2";
+
+    const NO_VERTEX = 1;
+    const NO_EDGE = 2;
+    const EDGE_EXISTS = 3;
+    const VERTEX_EXISTS = 4;
+    const NO_PATH = 5;
+    const BAD_TYPE = 6;
+    const NEG_CYCLE = 7;
+
     /**
      *
      * @var array Exception messages.
@@ -79,29 +92,30 @@ class PGraphException extends Exception
         if (self::$_messages == null) {
             self::$_messages = array(   
                 
-               NO_VERTEX => "A vertex with index {{ " 
-                          . ARG_INDEX . " }} does not exist.",
+               self::NO_VERTEX => "A vertex with index {{ " 
+                                . self::ARG_INDEX . " }} does not exist.",
                 
-               NO_EDGE => "An edge between vertices {{ " 
-                        . ARG_INDEX1 . " }} and {{ " . ARG_INDEX2 
-                        . " }} doesn't exist.",
+               self::NO_EDGE => "An edge between vertices {{ " 
+                              . self::ARG_INDEX1 . " }} and {{ " . self::ARG_INDEX2 
+                              . " }} doesn't exist.",
                 
-               EDGE_EXISTS => "An edge between vertices {{ " 
-                            . ARG_INDEX1 . " }} and {{ " . ARG_INDEX2 
-                            . " }} already exists.",
+               self::EDGE_EXISTS => "An edge between vertices {{ " 
+                                  . self::ARG_INDEX1 . " }} and " 
+                                  . "{{ " . self::ARG_INDEX2 
+                                  . " }} already exists.",
                 
-               NO_PATH => "There is no path between " 
-                        . "vertices {{ " . ARG_INDEX1 
-                        . " }} and {{ " . ARG_INDEX2 . " }}.",
+               self::NO_PATH => "There is no path between " 
+                              . "vertices {{ " . self::ARG_INDEX1 
+                              . " }} and {{ " . self::ARG_INDEX2 . " }}.",
                 
-               BAD_TYPE => "The type of an argument " 
-                         . "passed is invalid.",   
+               self::BAD_TYPE => "The type of an argument " 
+                               . "passed is invalid.",   
                
-               NEG_CYCLE => "There is a negative-weight " 
-                          . "cycle in this graph.",
+               self::NEG_CYCLE => "There is a negative-weight " 
+                                . "cycle in this graph.",
                 
-               VERTEX_EXISTS => "The vertex {{ " . ARG_INDEX
-                              . " }} already exists."
+               self::VERTEX_EXISTS => "The vertex {{ " . self::ARG_INDEX
+                                    . " }} already exists."
                 
             ); 
         }
